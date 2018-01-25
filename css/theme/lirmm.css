@@ -25,12 +25,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: #ffafbc;
+  background: #ff637d;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #ffafbc;
+  background: #ff637d;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -48,7 +48,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0em 0em 1em 0em;
-  color: #ff3052;
+  color: #e20026;
   font-family: "Fira Sans", sans-serif;
   font-weight: normal;
   line-height: 1.2;
@@ -210,20 +210,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #ff3052;
+  color: #e20026;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #ff7c92;
+  color: #ff3052;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #e20026; }
+  background: #960019; }
 
 /*********************************************
  * IMAGES
@@ -245,21 +245,21 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #ff3052;
+  border-color: #e20026;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #ff3052; }
+  color: #e20026; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #ff3052; }
+  color: #e20026; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -343,7 +343,7 @@ body {
 
 .reveal ul > li:before {
   content: "■ ";
-  color: #ff3052;
+  color: #e20026;
   font-size: 1em; }
 
 .reveal .cover {
@@ -354,11 +354,11 @@ body {
   margin-top: 2em;
   color: white !important; }
 
-.reveal .cover img {
+.reveal .cover img#inria {
   border: none;
   box-shadow: none;
   position: absolute;
-  top: -40px;
+  top: 0px;
   height: 8em; }
 
 .reveal section img {

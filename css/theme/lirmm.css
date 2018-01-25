@@ -327,7 +327,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  color: #000000;
+  color: #e20026;
   font-weight: bold; }
 
 .reveal ul {
@@ -358,7 +358,7 @@ body {
   border: none;
   box-shadow: none;
   position: absolute;
-  top: 0px;
+  top: -2em;
   height: 8em; }
 
 .reveal section img {

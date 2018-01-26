@@ -364,7 +364,8 @@ body {
 .reveal section img {
   margin: 0;
   border: 0px;
-  box-shadow: none; }
+  box-shadow: none;
+  background-color: transparent; }
 
 /*********************************************
 * SLIDE NUMBER

@@ -121,7 +121,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-    color: #000000;
+    color: $red;
     font-weight: bold;
 }
 
@@ -159,7 +159,7 @@ body {
     border: none;
     box-shadow: none;
     position: absolute;
-    top: 0px;
+    top: -2em;
     height: 8em;
 }
 
@@ -167,7 +167,7 @@ body {
     margin: 0;
     border: 0px;
     box-shadow: none;
-
+    background-color: transparent;
 }
 
 

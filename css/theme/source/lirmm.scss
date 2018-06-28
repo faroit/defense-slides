@@ -24,7 +24,7 @@ $backgroundColor: #fff;
 
 $mainColor: #222;
 
-$mainFontSize: 32px;
+$mainFontSize: 24px;
 $mainFont: 'Fira Sans', sans-serif;
 $headingColor: $red;
 $headingFont: 'Fira Sans', sans-serif;
@@ -42,16 +42,91 @@ $heading2Size: 1.2em;
 $heading3Size: 1.0em;
 $heading4Size: 0.8em;
 
+
 section.has-dark-background {
-    &, h1, h2, h3, h4, h5, h6 {
+     &, h1, h2, h3, h4, h5, h6 {
         color: #fff;
-    }
+     }
 }
 
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal .solutions {
+  width: 100%;
+  padding: 0.5em;
+  line-height: 1.3em;
+  box-shadow: -5px 5px 5px grey;
+  border-radius: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.03);
+  color: lighten(black, 25%);
+  margin-left: 0em;
+  margin-top: 1em;
+  background-image: url("img/bulb.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1em) center;
+  background-size: 2em 2em;
+
+}
+
+.reveal #covertitle {
+  position: relative;
+  font-size: 1.5em;
+  color:white;
+  padding:1em;
+}
+
+.reveal #covertitle:hover {
+  color:white;
+}
+
+
+
+.reveal .solutions li {
+  padding: 0em;
+  margin-left: -0.5em;
+  font-size: 1em;
+  font-weight:100;
+  padding-bottom: 0px;
+}
+
+.reveal .solutions ul>li:before {
+    content: "▹  ";
+    font-family: FontAwesome;
+    color: black;
+    font-size: 1em;
+    padding-right: 0.25em;
+    display: inline-block;
+}
+
+.reveal .references ul {
+  // border: 1px solid black;
+  list-style: none;
+  border-radius: 5px;
+  background-color: lighten( desaturate(black, 50%), 95% );
+  margin-left: 1em;
+  margin-top: 0.2em;
+}
+
+.reveal .references li {
+  padding: 0.3em;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-bottom: 0px;
+}
+
+.reveal .references ul>li:before {
+    content: "▹  ";
+    font-family: FontAwesome;
+    color: darken(grey, 50%);
+    font-size: 1em;
+    padding-right: 0.25em;
+    display: inline-block;
+}
 
 body {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -117,12 +192,18 @@ body {
     transition: opacity 800ms ease-in-out;
 }
 
+.reveal h2,
 .reveal h3,
 .reveal h4,
 .reveal h5,
 .reveal h6 {
     color: $red;
     font-weight: bold;
+}
+
+.reveal h2 {
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
 }
 
 .reveal ul {
@@ -152,7 +233,7 @@ body {
 
 .reveal .cover h1, h2, h3 {
     margin-top: 2em;
-    color: white !important;
+    // color: white !important;
 }
 
 .reveal .cover img#inria {
@@ -170,6 +251,20 @@ body {
     background-color: transparent;
 }
 
+.two-floating-elements {
+  > ul ~ p,
+  > p ~ ul {
+    max-width: 80%;
+    float:left;
+    // font-size: 0.7em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  > p ~ ul {
+    margin-left: 0;
+  }
+}
 
 /*********************************************
 * SLIDE NUMBER
@@ -218,4 +313,8 @@ body {
   background: rgba(0, 0, 0, 0.03);
   border-left: 10px solid rgba(0, 0, 0, 0.2);
   box-shadow: none;
+}
+
+section.has-dark-background h2 {
+  color: #fff !important;
 }

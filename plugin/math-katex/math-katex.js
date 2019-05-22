@@ -73,7 +73,7 @@ window.RevealMath = window.RevealMath || (function() {
 			'.reveal .katex.display { display: block }',
 
 			'.reveal .katex.inline:not(first) {',
-			'    margin-left: 0.35em;',
+			'    margin-left: 0.05em;',
 			'}'
 		]
 		.join( '\n' );

@@ -76,7 +76,7 @@ section.has-dark-background {
   position: relative;
   font-size: 1.5em;
   color:white;
-  padding:1em;
+//   padding:1em;
 }
 
 .reveal #covertitle:hover {
@@ -227,20 +227,26 @@ body {
 }
 
 .reveal .cover {
-    padding-top: 8em !important;
+    padding-top: 0em !important;
     color: white;
 }
 
 .reveal .cover h1, h2, h3 {
     margin-top: 2em;
-    // color: white !important;
+    color: white !important;
 }
 
-.reveal .cover img#inria {
+.reveal .covertitle {
+    margin-top: 8em;
+    margin-left: 1em;
+}
+
+#inria {
     border: none;
     box-shadow: none;
-    position: absolute;
-    top: -2em;
+    display: block;
+    position: absolute !important;
+    top: -2em !important;
     height: 8em;
 }
 

@@ -13,6 +13,8 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/github.css">
 
+		<script src="https://unpkg.com/wavesurfer.js"></script>
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -45,17 +47,32 @@
 	<section data-state="no-title-footer no-progressbar" data-background="black" data-state="no-title-footer" data-fullscreen>
 		<div class="container">
 			<div class="col fragment">
-				<img width="500" height="100%"
-					src="https://www.minimatters.com/wp-content/uploads/2017/02/conference-reception-400x225.png"></img>
+				<h1 style="color:#ED8C01">How many speakers can you hear?</h1>
+				<div>
+					<span class="fragment" data-audio-src="assets/audio/two_speaker_faded.wav"><h3>Example A</h3></span>
+				</div>
+				<div>
+					<span class="fragment" data-audio-src="assets/audio/ten_speakers_faded.wav"><h3>Example B</h3></span>
+				</div>
 			</div>
 
 			<div class="col fragment">
-				<img width="500" height="100%" src="https://www.minimatters.com/wp-content/uploads/2017/02/conference-reception-400x225.png"></img>
+				<h1 style="color:lawngreen">Can you hear out each instrument?</h1>
+				<div>
+					<span class="fragment" data-audio-src="assets/audio/jazz_wice.wav">
+						<h3>Example A</h3>
+					</span>
+				</div>
+				<div>
+					<span class="fragment" data-audio-src="assets/audio/unison_wice.wav">
+						<h3>Example B</h3>
+					</span>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section>
+	<!-- <section>
 		<div class="container">
 		
 			<div class="col">
@@ -72,19 +89,10 @@
 
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section>
-		<h1>The big picture</h1>
-		
-		<div>$$\mathbf{x}=\sum_{j=1}^{J}a_j\mathbf{s}_j$$</div>
-		<ul>
-			<li>Can we obtain $\mathbf{s}_j$ from $\mathbf{x}$?</li>
-			<li>Can we find $J$ from $\mathbf{x}$?</li>
-		</ul>
-	</section>
-
-	<section>
+		<h2>Overlap in Time and Frequency</h2>
 		<div class="container">
 			<div class="col">
 				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_00.svg" alt=""></br>
@@ -98,85 +106,204 @@
 	</section>
 
 	<section>
+		<h1>The big picture</h1>
+		
+		<div>$$\mathbf{x}=\sum_{j=1}^{k}a_j\mathbf{s}_j$$</div>
+		<ul>
+			<li>Separation: Can we obtain $\mathbf{s}_j$ from $\mathbf{x}$?</li>
+			<li>Count Estimation: Can we find $k$ from $\mathbf{x}$?</li>
+		</ul>
+	</section>
+
+	<section>
 		<h2>Applications</h2>
 		<div class="container">
 			<div class="col">
 			<h3>Separation</h3>
 				<ul>
-					<li>Application1</li>
-					<li>Application1</li>
-					<li>Application1</li>
-					<li>Application1</li>
+					<li>Active Listening</li>
+					<li>Music Repurposing</li>
+					<li>Hearing Aids</li>
+					<li>Frontend for many other signal processing methods</li>
 				</ul>
 			</div>
 			<div class="col">
 				<h3>Count Estimation</h3>
 				<ul>
-					<li>Application2</li>
-					<li>Application2</li>
-					<li>Application2</li>
-					<li>Application2</li>
+					<li>First step to address the separation</li>
+					<li>Crowd Surveillance</li>
+					<li>Wildlife Monitoring</li>
+					<li>Frontend for Speech Recognition and Diarization</li>
 				</ul>
 			</div>
 		</div>
-
 	</section>
 
 	<section>
+		<h2>Outline and Contributions</h2>
+		<div class="container">
+			<div class="col">
+				<h3>Separation</h3>
+				<ul></ul>
+			</div>
+			<div class="col">
+				<h3>Count Estimation</h3>
+				<ul></ul>
+			</div>
+			<div class="col">
+				<h3>Conclusion</h3>
+				<ul></ul>
+			</div>
+		</div>
+	</section>
+
+	<section data-background="#ED8C01" data-state="no-title-footer">
+		<h1 style='color:white; font-size: 2.4em'>Separation by Known and Unknown Modulation</h1>
+	</section>
+
+	<section>
+		<h2>How do we address</h2>
+	</section>
+
+	<!-- <section>
 		<div><h2>Separation</h2></div>
 
 		<div class="fig-container" data-file="http://umx-sisec18.s3-website.eu-west-3.amazonaws.com/"
 			data-scroll="no" data-style="height: 430px; width: 800px;">
 		</div>
-	</section>
+	</section> -->
 
 	<section data-transition="slide fade-out">
-		<img width="100%" src="assets/images/trumpet.svg">
+		<h2>Instruments playing Unison</h2>
+		<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet</h3>
+		<div style="text-align: center" >
+			<img width="80%" src="assets/images/trumpet.svg">
+		</div>
 	</section>
+
 	<section data-transition="fade-in fade-out">
-		<img width="100%" src="assets/images/cello.svg">
+		<h2>Instruments playing Unison</h2>
+		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
+		<div style="text-align: center">
+			<img width="80%" src="assets/images/cello.svg">
+		</div>
 	</section>
+
 	<section data-transition="fade-in fade-out">
-		<img width="100%" src="assets/images/cello_ani.svg">
+		<h2>Instruments playing Unison</h2>
+		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
+		<div style="text-align: center">
+				<img width="80%" src="assets/images/cello_ani.svg">
+		</div>
+	</section>
+
+	<section data-transition="fade-in fade-out">
+		<h2>Instruments playing Unison</h2>
+		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
+		<div style="text-align: center">
+			<img width="80%" src="assets/images/cello.svg">
+		</div>
 	</section>
 
 	<section data-transition="fade-in side">
-		<img width="100%" src="assets/images/both.svg">
+		<h2>Instruments playing Unison</h2>
+		<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet + <img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
+		<div style="text-align: center">
+				<img width="80%" src="assets/images/both.svg">
+		</div>
 	</section>
-
+	
 	<section>
-		<h2>Common Source Separation Scenario</h2>
-		<p>
-			<img src="assets/images/non_unison.svg" alt="" />
-		</p>
-		<aside class="notes">
-			<ul>
-				<li>Can be extended to $n$-dimensions</li>
-				<li></li>
-			</ul>
-		</aside>
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3>Harmonicity for the lead</h3>
+	
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Pitch detection</li>
+						<li>Clean voices</li>
+						<li>"Metallic" artifacts</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img style="float:right" width="100%" src="assets/images/ReviewPaper_ Figure2_new.svg" alt="">
+				</div>
+			</div>
+		</section>
+	
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3>Redundancy for the accompaniment: NMF</h3>
+	
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Spectral templates</li>
+						<li>Low-rank assumptions</li>
+						<li>Bad generalization</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img height="60%" src="assets/images/ReviewPaper_ Figure3.svg" alt="">
+				</div>
+			</div>
+	
+		</section>
+	
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3>Redundancy for the accompaniment: RPCA</h3>
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Low-rank for music</li>
+						<li>Vocals as unstructured</li>
+						<li>Strong interferences in general</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img src="assets/images/ReviewPaper_ Figure4.svg" alt="">
+				</div>
+			</div>
+		</section>
+	
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3>Redundancy for the accompaniment: REPET</h3>
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Repetitive music</li>
+						<li>Non-repetitive vocals</li>
+						<li>Solos in vocals</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img src="assets/images/ReviewPaper_ Figure5.svg" alt="">
+				</div>
+			</div>
+		</section>
+	
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3> Modeling both lead and accompaniment: source filter</h3>
+	
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Harmonic vocals</li>
+						<li>Low-rank music</li>
+						<li>Poor generalization</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img src="assets/images/ReviewPaper_ Figure7.svg" alt="">
+				</div>
+			</div>
+		</section>
 	</section>
-	<!-- ----------------------------------------------------------------------------------------- -->
-	<section>
-		<h2>Unison Scenario</h2>
-		<p>
-			<img src="assets/images/unison.svg" alt="" />
-		</p>
-	</section>
-	<!-- ----------------------------------------------------------------------------------------- -->
-	<section>
-		<h2>Wanted</h2>
-		<ul>
-			<li>Signal representation
-				<ul>
-					<li>exploiting differences in AM, FM, PM</li>
-					<li>Easily invertible</li>
-				</ul>
-			</li>
-			<li>Suitable Model</li>
-		</ul>
-	</section>
-	<!-- ----------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------- -->
 	<section>
 		<h2>Related Work</h2>
 		<ul>
@@ -188,38 +315,49 @@
 			</li>
 		</ul>
 	</section>
-	<!-- ----------------------------------------------------------------------------------------- -->
-	<section data-background="#ED8C01" data-state="no-title-footer">
-		<h1 style='color:white; font-size: 2.4em'>Common Fate Transform</h1>
-	</section>
-	<!-- ----------
-	------------------------------------------------------------------------------- -->
 
-	<section class="fig-container" data-file="https://www.youtube.com/embed/V4f_1_r80RY?start=60">
-	</section>
-
-	<section data-background="assets/images/flock.jpg" data-state="no-title-footer">
-		<p>
-			&nbsp;
-		</p>
-		<aside class="notes">
-			Gestalt Theory,
-			Let us imagine a large number of birds in flight. From
-		</aside>
-	</section>
-	<!-- ----------------------------------------------------------------------------------------- -->
-	<section>
-		<h2>Common Fate in Audio</h2>
-		<ul>
-			<li><a href="#">Bregman 1994</a> used term in auditory scene analysis.
-				<ul>
-					<li>Ability to group sound objects based on their common motion over time</li>
-					<li>Humans ability to detect and group sound sources by small differences in the FM and AM modulation is
-						outstanding</li>
 	
+	<section>
+		<h2>Focus on Modulation "Textures"</h2>
+		<ul>
+			<li>Signal representation
+				<ul>
+					<li>exploiting differences in AM, FM, PM</li>
+					<li>Easily invertible</li>
 				</ul>
 			</li>
+			<li>Suitable Model</li>
 		</ul>
+	</section>
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- <section data-background="assets/images/flock.jpg" data-state="no-title-footer">
+	<h1 style='background-color:rgba(255, 255, 255, .5) ; padding: 0.5em; color:black; font-size: 2.4em'>Common Fate Transform</h1>
+	</section>
+ -->
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Common Fate</h2>
+		
+		<div class="container">
+			<div class="col">
+			<ul>
+				<li><a href="#">Bregman 1994</a> used term in auditory scene analysis.
+					<ul>
+						<li>Group sound objects based on their common motion over time</li>
+						<li>Group sound sources by small differences in FM and AM</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		
+			<div class="col">
+				<div class="fig-container" data-file="https://www.youtube.com/embed/V4f_1_r80RY?start=60" data-scroll="no"
+					data-style="height: 240px; width: 1024px">
+				</div>
+			</div>
+		</div>
+
 		<p style="background-color: orange; padding: 10px; color:white">
 			<strong>Proposing:</strong> Transformation which groups common modulation textures to sound sources
 		</p>
@@ -231,16 +369,18 @@
 	</section>
 	<!-- ----------------------------------------------------------------------------------------- -->
 	<section>
-		<h2>Audio</h2>
+		<h2 onclick="wavesurfer.playPause()">Audio</h2>
 		<div id="waveform"></div>
-		<p style="text-align:center" onclick="wavesurfer.playPause()">
+		<p style="text-align:center">
 			$x \in \mathbb{R}^{72000}$
 		</p>
 	</section>
 	<!-- ----------------------------------------------------------------------------------------- -->
 	<section>
-		<h2>STFT</h2>
-		<img style="margin-left:-20px" width="70%" src="assets/images/stft.png">
+		<h2>Short-Time Fourier Transform</h2>
+		<div style="text-align: center">
+				<img style="margin-left:-20px" width="70%" src="assets/images/stft.png">
+		</div>
 		<p style="text-align:center">
 			$\mathbf{X} \in \mathbb{C}^{352 \times 279}$
 		</p>
@@ -481,96 +621,6 @@
 		</table>
 	</section>
 
-<section>
-	<section>
-		<h2>A brief history: model-driven methods</h2>
-		<h3>Harmonicity for the lead</h3>
-
-		<div class="container">
-			<div class="col">
-				<ul>
-					<li>Pitch detection</li>
-					<li>Clean voices</li>
-					<li>"Metallic" artifacts</li>
-				</ul>
-			</div>
-			<div class="col">
-				<img style="float:right" width="100%" src="assets/images/ReviewPaper_ Figure2_new.svg" alt="">
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<h2>A brief history: model-driven methods</h2>
-		<h3>Redundancy for the accompaniment: NMF</h3>
-
-		<div class="container">
-			<div class="col">
-				<ul>
-					<li>Spectral templates</li>
-					<li>Low-rank assumptions</li>
-					<li>Bad generalization</li>
-				</ul>
-			</div>
-			<div class="col">
-				<img height="60%" src="assets/images/ReviewPaper_ Figure3.svg" alt="">
-			</div>
-		</div>
-
-		</section>
-
-	<section>
-		<h2>A brief history: model-driven methods</h2>
-		<h3>Redundancy for the accompaniment: RPCA</h3>
-		<div class="container">
-			<div class="col">
-				<ul>
-					<li>Low-rank for music</li>
-					<li>Vocals as unstructured</li>
-					<li>Strong interferences in general</li>
-				</ul>
-			</div>
-			<div class="col">
-				<img src="assets/images/ReviewPaper_ Figure4.svg" alt="">
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<h2>A brief history: model-driven methods</h2>
-		<h3>Redundancy for the accompaniment: REPET</h3>
-		<div class="container">
-			<div class="col">
-				<ul>
-					<li>Repetitive music</li>
-					<li>Non-repetitive vocals</li>
-					<li>Solos in vocals</li>
-				</ul>
-			</div>
-			<div class="col">
-				<img src="assets/images/ReviewPaper_ Figure5.svg" alt="">
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<h2>A brief history: model-driven methods</h2>
-		<h3> Modeling both lead and accompaniment: source filter</h3>
-
-		<div class="container">
-			<div class="col">
-				<ul>
-					<li>Harmonic vocals</li>
-					<li>Low-rank music</li>
-					<li>Poor generalization</li>
-				</ul>
-			</div>
-			<div class="col">
-				<img src="assets/images/ReviewPaper_ Figure7.svg" alt="">
-			</div>
-		</div>
-	</section>
-</section>
 
 
 	<section>
@@ -618,9 +668,13 @@
 		<h1>Conclusion</h1>
 
 	</section>
-
+<!--  RESTERAMPE -->
 	<section>
-		<h1></h1>
+		<h1>Separability</h1>
+		<div style=text-align:center>
+		<iframe width="850" height="600" seamless frameborder="0" scrolling="no"
+			src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTHKuFERJtSQw870QDSr2e339Qt1qQ_O_F5r_wjpnB2Vq9oIul9fIfIHI6XdzU0uo1CCAxvFZSX0PeJ/pubchart?oid=220738334&amp;format=image"></iframe>
+		</div>
 	</section>
 	</div>
 	<div class='footer'>
@@ -636,7 +690,6 @@
 		// More info about config & dependencies:
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
-		
 		Reveal.initialize({
 			math: {
 				mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js',
@@ -653,16 +706,34 @@
 			minScale: 0.1,
 			maxScale: 5,
 			transition: 'none', //
-
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.wav',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: -10, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance 
+				autoplay: true,	// automatically start slideshow
+				defaultDuration: 10,	// default duration in seconds if no audio is available 
+				defaultAudios: false,	// try to play audios with names such as audio/1.2.ogg
+			},
 			dependencies: [
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
 				{ src: 'plugin/notes/notes.js', async: true },
 				{ src: 'plugin/math/math.js', async: true },
 				{ src: 'node_modules/reveald3/reveald3.js' },
+				{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function () { return !!document.body.classList; } },
 				{ src: 'plugin/highlight/highlight.js', async: true }
 			]
 		});
+		var wavesurfer = WaveSurfer.create({
+				container: '#waveform',
+				waveColor: 'grey',
+				progressColor: 'orange'
+			});
+			wavesurfer.load('assets/audio/fm_sine.wav');
+
 	</script>
 	</body>
 </html>

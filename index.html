@@ -95,12 +95,12 @@
 		<h2>Overlap in Time and Frequency</h2>
 		<div class="container">
 			<div class="col">
-				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_00.svg" alt=""></br>
-				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_01.svg" alt="">
+				<img data-audio-src="assets/audio/00.wav" class="fragment fade-in-then-semi-out" src="assets/images/overlap_00.svg" alt=""></br>
+				<img class="fragment fade-in-then-semi-out" data-audio-src="assets/audio/01.wav" src="assets/images/overlap_01.svg" alt="">
 			</div>
 			<div class="col">
-				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_10.svg" alt=""></br>
-				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_11.svg" alt="">
+				<img data-audio-src="assets/audio/10.wav" class="fragment fade-in-then-semi-out" src="assets/images/overlap_10.svg" alt=""></br>
+				<img data-audio-src="assets/audio/11.wav" class="fragment fade-in-then-semi-out" src="assets/images/overlap_11.svg" alt="">
 			</div>
 		</div>
 	</section>
@@ -111,14 +111,14 @@
 		<div>$$\mathbf{x}=\sum_{j=1}^{k}\mathbf{s}_j$$</div>
 		<div class="container">
 			<div class="col" style='text-align: center'>
-				<h3>Processing</h3>
+				<h3>Signal Processing</h3>
 				<ul>
 					<li>Can we obtain $\mathbf{s}_j$ from $\mathbf{x}$?</li>
 					<li>Source Separation</li>
 				</ul>
 			</div>
 			<div class="col" style='text-align: center'>
-				<h3>Analysis</h3>
+				<h3>Signal Analysis</h3>
 				<ul>
 					<li>Can we find $k$ from $\mathbf{x}$?</li>
 					<li>Count Estimation</li>
@@ -176,14 +176,6 @@
 	<section>
 		<h2>How do we address</h2>
 	</section>
-
-	<!-- <section>
-		<div><h2>Separation</h2></div>
-
-		<div class="fig-container" data-file="http://umx-sisec18.s3-website.eu-west-3.amazonaws.com/"
-			data-scroll="no" data-style="height: 430px; width: 800px;">
-		</div>
-	</section> -->
 
 	<section data-transition="slide fade-out">
 		<h2>Instruments playing Unison</h2>
@@ -355,17 +347,15 @@
 			<div class="col">
 			<ul>
 				<li><a href="#">Bregman 1994</a> used term in auditory scene analysis.
-					<ul>
-						<li>Group sound objects based on their common motion over time</li>
-						<li>Group sound sources by small differences in FM and AM</li>
-					</ul>
+						<li>Group based common motion over time</li>
+						<li>Group by small differences in FM and AM</li>
 				</li>
 			</ul>
 			</div>
 		
 			<div class="col">
-				<div class="fig-container" data-file="https://www.youtube.com/embed/V4f_1_r80RY?start=60" data-scroll="no"
-					data-style="height: 240px; width: 1024px">
+				<div class="fig-container" data-file="https://www.youtube.com/embed/V4f_1_r80RY?start=60autoplay=1" data-scroll="no"
+					data-style="height: 290px; width: 1024px">
 				</div>
 			</div>
 		</div>
@@ -633,8 +623,6 @@
 		</table>
 	</section>
 
-
-
 	<section>
 		<h2>Summary</h2>
 		<h3>Processing Methods for Separation</h3>
@@ -682,6 +670,14 @@
 	</section>
 <!--  RESTERAMPE -->
 	<section>
+			<div><h2>Separation</h2></div>
+	
+			<div class="fig-container" data-file="http://umx-sisec18.s3-website.eu-west-3.amazonaws.com/"
+				data-scroll="no" data-style="height: 430px; width: 800px;">
+			</div>
+		</section>
+
+	<section>
 		<h1>Separability</h1>
 		<div style=text-align:center>
 		<iframe width="850" height="600" seamless frameborder="0" scrolling="no"
@@ -702,6 +698,13 @@
 		// More info about config & dependencies:
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
+		var wavesurfer = WaveSurfer.create({
+				container: '#waveform',
+				waveColor: 'grey',
+				progressColor: 'orange'
+			});
+			wavesurfer.load('assets/audio/fm_sine.wav');
+
 		Reveal.initialize({
 			math: {
 				mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js',
@@ -739,12 +742,6 @@
 				{ src: 'plugin/highlight/highlight.js', async: true }
 			]
 		});
-		var wavesurfer = WaveSurfer.create({
-				container: '#waveform',
-				waveColor: 'grey',
-				progressColor: 'orange'
-			});
-			wavesurfer.load('assets/audio/fm_sine.wav');
 
 	</script>
 	</body>

@@ -35,6 +35,14 @@ body {
  * VIEW FRAGMENTS
  *********************************************/
 
+ .container{
+    display: flex;
+}
+
+.col{
+    flex: 1;
+}
+
 .reveal .slides section .fragment {
 	opacity: 0;
 	visibility: hidden;

@@ -27,6 +27,16 @@ body {
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
 .reveal .slides section .fragment {
   opacity: 0;
   visibility: hidden;

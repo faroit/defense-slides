@@ -23,148 +23,646 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
+	<div class="reveal">
+	<div class="slides">
 
-				<section class="cover" data-background="css/theme/alabs/alabs_header.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-position="0 0" data-state="no-title-footer no-progressbar">
-					<h2>HTML5 Presentation Layout</h2>
-					<h3>A nice subtitle</h3>
-					<p>
-						Firstname Lastname<br />
-						firstname.lastname@audiolabs-erlangen.de
-					</p>
-					<p>
-						February 21, 2014
-					</p>
-					<p>
-						<div class='logos'>
-							<img src="css/theme/alabs/FAU_bw.svg" id="FAU" class="logo" alt="">
-							<img src="css/theme/alabs/IIS_bw.svg" id="IIS" class="logo" alt="">
-						</div>
-				</section>
+	<section class="cover" data-background="css/theme/alabs/alabs_header.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-position="0 0" data-state="no-title-footer no-progressbar">
+		<h2>Separation and Count Estimation for Audio Sources Overlapping in Time and Frequency</h2>
+		<h3>PhD. Defense</h3>
+		<p>
+			Fabian-Robert Stöter<br />
+		</p>
+		<p>
+			September 19th, 2019
+		</p>
+		<p>
+			<div class='logos'>
+				<img src="css/theme/alabs/FAU_bw.svg" id="FAU" class="logo" alt="">
+				<img src="css/theme/alabs/IIS_bw.svg" id="IIS" class="logo" alt="">
+			</div>
+	</section>
 
-				<section data-markdown>
-					<textarea data-template>
-						# Audio research in the Zenith team
+	<section data-state="no-title-footer no-progressbar" data-background="black" data-state="no-title-footer" data-fullscreen>
+		<div class="container">
+			<div class="col fragment">
+				<img width="500" height="100%"
+					src="https://www.minimatters.com/wp-content/uploads/2017/02/conference-reception-400x225.png"></img>
+			</div>
 
-						1. The KAMoulox ANR project
-						2. Two research focuses
-							- Denoising with $\underbrace{\alpha}$-stable distributions
-							- Deep learning for music demixing
-						3. The Signal Separation Evaluation campaign
-					</textarea>
-				</section>
+			<div class="col fragment">
+				<img width="500" height="100%" src="https://www.minimatters.com/wp-content/uploads/2017/02/conference-reception-400x225.png"></img>
+			</div>
+		</div>
+	</section>
 
-				<section>
-					<div><h2>Website without the header</h2></div>
-
-					<div class="fig-container" data-file="http://umx-sisec18.s3-website.eu-west-3.amazonaws.com/"
-						data-scroll="no" data-style="height: 430px; width: 800px;">
-					</div>
-				</section>
-
-				<section data-markdown>
-					<textarea data-template>
-						# Archives of the CNRS - Musée de l'Homme
-
-						* French ethnologists to record world audio heritage
-						* Since 1900: 42k documents, 32k digitized
-						* From 199 countries, 1200 ethnies
-						* Users are __scientists__ in digital humanities (2600/month)
-
-						__Challenges__
-						* Most recordings are __old, degraded, noisy__, but _precious_
-						* Users are __not__ sound engineers
-						* Impossible to automatically restore __all__ entries
-
-						__Key idea__:  <font color="orange">embed online audio restoration tools in the archives</font>
-						(ANR JCJC KAMoulox grant, 300k€)
-					</textarea>
-				</section>
-
-				<section data-markdown>
-					<textarea data-template>
-						# The KAMoulox project
-						_Cutting-edge signal processing research for the audio heritage_
-
-						1. __Restoration of immaterial audio heritage__ denoising, declipping, enhancement
-						2. __Repurposing of musical heritage__ demixing, remastering, resampling
-						3. __Online tools__ for scientists in digital humanities
-
-
-						### Challenges
-						* __Scale__: each of the $3.10^5$ signals is a $10^7$ samples time-series, with highly structured content
-						* __Noise__: recordings are very old, noisy and bandpass-limited
-						* __Users__: are scientists, but __non experts__
-
-
-						### Research activity
-						* __Probabilistic models__: $\alpha$-stable distributions, multichannel filtering, interpolation, extrapolation, regression
-						* __Data analysis__: deep neural networks, scalability, online processing
-						* __Community service__: international evaluation campaigns, open data & software
-					</textarea>
-				</section>
-
-				<section data-markdown>
-					<textarea data-template>
-# Denoising old recordings
-* Noise is modelled with $\beta$-stable stochastic processes
-* Robust and fast inference based on moment matching and sketching
-* A new light on some audio best practices
-					</textarea>
-				</section>
-
-				<section data-markdown>
-					<textarea data-template>
-# Music demixing
-
-__Many applications__
-
-* Wide audience: active listening, karaoke
-* Sound engineers: remastering, resampling...
-* Humanities: linguistics and ethnomusicology
-
-__Challenges__
-* Inverse ill-posed problem
-* Diversity of music styles
-
-> Rafii, Liutkus, Stöter, Mimilakis, FitzGerald, Pardo, "A Review of the research on the separation of Lead and accompaniment in music" IEEE TASLP (2018)..
-					</textarea>
-				</section>
+	<section>
+		<div class="container">
+		
+			<div class="col">
+		<div class="fig-container" data-file="https://umxhq-demo.s3.eu-west-3.amazonaws.com/index.html" data-scroll="no"
+			data-style="height: 40vh; width: 100%;">
+		</div>
 
 			</div>
-			<div class='footer'>
-				<div id="copyright">Fabian-Robert Stöter</div>
-				<img src="css/theme/alabs/alabs_logo.svg" alt="Logo" />
-				<div id="middlebox">A nice loooooooooooooooooong Title</div>
+		
+			<div class="col">
+		<div class="fig-container" data-file="https://umxpro-demo.s3.eu-west-3.amazonaws.com/index.html" data-scroll="no"
+			data-style="height: 40vh; width: 100%;">
+		</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h1>The big picture</h1>
+		
+		<div>$$\mathbf{x}=\sum_{j=1}^{J}a_j\mathbf{s}_j$$</div>
+		<ul>
+			<li>Can we obtain $\mathbf{s}_j$ from $\mathbf{x}$?</li>
+			<li>Can we find $J$ from $\mathbf{x}$?</li>
+		</ul>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="col">
+				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_00.svg" alt=""></br>
+				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_01.svg" alt="">
+			</div>
+			<div class="col">
+				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_10.svg" alt=""></br>
+				<img class="fragment fade-in-then-semi-out" src="assets/images/overlap_11.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Applications</h2>
+		<div class="container">
+			<div class="col">
+			<h3>Separation</h3>
+				<ul>
+					<li>Application1</li>
+					<li>Application1</li>
+					<li>Application1</li>
+					<li>Application1</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Count Estimation</h3>
+				<ul>
+					<li>Application2</li>
+					<li>Application2</li>
+					<li>Application2</li>
+					<li>Application2</li>
+				</ul>
 			</div>
 		</div>
 
-		<script src="js/reveal.js"></script>
+	</section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				controls: false,
-				progress: true,
-				history: true,
-				center: false,
-				slideNumber: true,
-				minScale: 0.1,
-				maxScale: 5,
-				transition: 'none', //
+	<section>
+		<div><h2>Separation</h2></div>
 
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/math-katex/math-katex.js', async: true },
-					{ src: 'node_modules/reveald3/reveald3.js' },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
+		<div class="fig-container" data-file="http://umx-sisec18.s3-website.eu-west-3.amazonaws.com/"
+			data-scroll="no" data-style="height: 430px; width: 800px;">
+		</div>
+	</section>
+
+	<section data-transition="slide fade-out">
+		<img width="100%" src="assets/images/trumpet.svg">
+	</section>
+	<section data-transition="fade-in fade-out">
+		<img width="100%" src="assets/images/cello.svg">
+	</section>
+	<section data-transition="fade-in fade-out">
+		<img width="100%" src="assets/images/cello_ani.svg">
+	</section>
+
+	<section data-transition="fade-in side">
+		<img width="100%" src="assets/images/both.svg">
+	</section>
+
+	<section>
+		<h2>Common Source Separation Scenario</h2>
+		<p>
+			<img src="assets/images/non_unison.svg" alt="" />
+		</p>
+		<aside class="notes">
+			<ul>
+				<li>Can be extended to $n$-dimensions</li>
+				<li></li>
+			</ul>
+		</aside>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Unison Scenario</h2>
+		<p>
+			<img src="assets/images/unison.svg" alt="" />
+		</p>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Wanted</h2>
+		<ul>
+			<li>Signal representation
+				<ul>
+					<li>exploiting differences in AM, FM, PM</li>
+					<li>Easily invertible</li>
+				</ul>
+			</li>
+			<li>Suitable Model</li>
+		</ul>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Related Work</h2>
+		<ul>
+			<li>Frequency-dependent activation matrices by using a source/filter-based model (<a href="#">Hennequin
+					2011</a>)</li>
+			<li>HR-NMF models each complex entry of a time-frequency as a linear combination of its neighbours (<a
+					href="#">Badeau 2011</a>)</li>
+			<li>Exploiting AM by computing a modulation spectrogram and factorise using NTF (<a href="#">Barker 2013</a>)
+			</li>
+		</ul>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section data-background="#ED8C01" data-state="no-title-footer">
+		<h1 style='color:white; font-size: 2.4em'>Common Fate Transform</h1>
+	</section>
+	<!-- ----------
+	------------------------------------------------------------------------------- -->
+
+	<section class="fig-container" data-file="https://www.youtube.com/embed/V4f_1_r80RY?start=60">
+	</section>
+
+	<section data-background="assets/images/flock.jpg" data-state="no-title-footer">
+		<p>
+			&nbsp;
+		</p>
+		<aside class="notes">
+			Gestalt Theory,
+			Let us imagine a large number of birds in flight. From
+		</aside>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Common Fate in Audio</h2>
+		<ul>
+			<li><a href="#">Bregman 1994</a> used term in auditory scene analysis.
+				<ul>
+					<li>Ability to group sound objects based on their common motion over time</li>
+					<li>Humans ability to detect and group sound sources by small differences in the FM and AM modulation is
+						outstanding</li>
+	
+				</ul>
+			</li>
+		</ul>
+		<p style="background-color: orange; padding: 10px; color:white">
+			<strong>Proposing:</strong> Transformation which groups common modulation textures to sound sources
+		</p>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Common Fate Transform</h2>
+		<img src="assets/images/cft_blocks.svg" width="100%" alt="" />
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Audio</h2>
+		<div id="waveform"></div>
+		<p style="text-align:center" onclick="wavesurfer.playPause()">
+			$x \in \mathbb{R}^{72000}$
+		</p>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>STFT</h2>
+		<img style="margin-left:-20px" width="70%" src="assets/images/stft.png">
+		<p style="text-align:center">
+			$\mathbf{X} \in \mathbb{C}^{352 \times 279}$
+		</p>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Common Fate Transform</h2>
+		<table>
+			<tr>
+				<td>
+					<img src="assets/images/gft.png" width="100%" alt="" />
+					<p style="text-align:center">
+						STFT Grid
+					</p>
+					<p style="text-align:center">
+						$\mathcal{G} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
+					</p>
+				</td>
+				<td>
+					<img src="assets/images/cft.png" width="100%" alt="" />
+					<p style="text-align:center">
+						CFT
+					</p>
+					<p style="text-align:center">
+						$\mathcal{V} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
+					</p>
+				</td>
+			</tr>
+		</table>
+		<p>
+		</p>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>In Detail</h2>
+		<img class="stretch" src="assets/images/gridplot.svg">
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Compared to modulation spectrograms... </h2>
+		<ul>
+			<li>CFT is computed using complex STFT $X$
+				<ul>
+					<li>Easily invertible</li>
+					<li>Models phase dependencies between neighbouring STFT entries</li>
+				</ul>
+			</li>
+			<li>Patches span/merge several frequency bins</li>
+			<li>Results in <strong>modulation texture</strong></li>
+		</ul>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section data-background="#ED8C01" data-state="no-title-footer">
+		<h1 style='color:white; font-size: 2.4em'>Common Fate Model</h1>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>NMF</h2>
+		<p>
+			<img src="assets/images/nmf.svg" width="100%" alt="" />
+			$$\sum\limits_{j=1}^{J} \mathbf{w}_{j}(f) \circ \mathbf{h}_{j}(t) $$
+		</p>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+		<section>
+			<h2>Common Fate Model</h2>
+			<p>
+				<img src="assets/images/cfm_unfolded.svg" width="100%" alt="" />
+				$$\sum\limits_{j=1}^{J} \mathcal{A}_{j}(a,b,f) \circ \mathbf{h}_{j}(t)$$
+			</p>
+		</section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+		<section>
+			<h2>Common Fate Model</h2>
+			<p>
+				<img src="assets/images/cfm.svg" width="100%" alt="" />
+				$$\sum\limits_{j=1}^{J} \mathcal{A}_{j}(a,b,f) \circ \mathbf{h}_{j}(t)$$
+			</p>
+		</section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+		<section>
+			<h2>CPD/PARAFAC/NTF</h2>
+			<!-- <ul>
+								<li>Take the “outer-product” of corresponding columns from each factor matrix to form a simple (rank-1) tensor</li>
+							</ul> -->
+			<p>
+				<img src="assets/images/cpd.svg" width="100%" alt="" />
+				$$\sum\limits_{j=1}^{J} \mathbf{w}_{j}(f) \circ \mathbf{m}_{j}(b) \circ \mathbf{h}_{j}(t)$$
+			</p>
+			<aside class="notes">
+				<ul>
+					<li>Can be extended to $n$-dimensions</li>
+					$\sum\limits_{j=1}^{J} \mathbf{w}_{j}(f) \circ \mathbf{m}_{j}(b) \circ \mathbf{h}_{j}(t) \circ
+					\mathbf{q}_{j}(t)$
+				</ul>
+			</aside>
+		</section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Signal Separation</h2>
+		<ol>
+			<li>Compute the CFT from audio signal to get tensor $\mathcal{V}$</li>
+			<li>Take the magnitude $|\mathcal{V}|$</li>
+			<li>Initialise $\mathcal{A}$ and $\mathbf{h}$ with random non-negative values</li>
+			<li>Apply multiplicative update rule to minimize $\beta$-divergence</strong></li>
+			<li>Synthesise factorised components using Wiener filtering</strong></li>
+			<li>Inverse CFT</strong></li>
+		</ol>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section data-state="no-title-footer" data-background="#ED8C01">
+		<h1 style='color:white; font-size: 2.4em'>Evaluation</h1>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+						<h2>Parameters</h2>
+							<ul>
+								<li>STFT Window Size: $1024$</li>
+								<li>STFT Hop Size: $512$</li>
+								<li>CFM Window Size $(Na,Nb) = (4, 64)$</li>
+								<li>CFM Hopsize $(Na,Nb) = (2, 32)$</li>
+	
+							</ul>
+					</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	
+	<section>
+		<h2>Dataset</h2>
+		<ul>
+			<li>Single pitches (C4 at 261.63 Hz)
+				<ul>
+					<li>Viola</li>
+					<li>Cello</li>
+					<li>Tenor sax</li>
+					<li>English horn</li>
+					<li>Flute</li>
+				</ul>
+			</li>
+			<li>$\rightarrow$ ten mixtures of two instruments each</li>
+			<li>Mixtures generated with a simple A — B — (A + B) scheme. </li>
+			<li>Data were encoded in 44.1 kHz / 16 bit.</li>
+		</ul>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	
+		<section>
+							<h2>Comparison</h2>
+							<ul>
+								<li>All factorisations ran for 100 iterations and were repeated five times.</li>
+								<li>We chose $J = (2 \dots 6)$ components for each factorisation.</li>
+								<li>For j > 2 we used oracle clustering by SDR</li>
+							</ul>
+		</section>
+	<!-- -------------------------
+		---------------------------------------------------------------- -->
+	<section>
+		<h2>Models</h2>
+		<ul style="font-size: 28px">
+			<li><strong>NMF</strong> Non-Negative Matrix Factorization</li>
+			<li><strong>MOD</strong> CP on modulation spectrogram</li>
+			<li><strong>CFM</strong> Common Fate Model
+				<ul>
+					<li><strong>CFMM</strong> Common Fate Magnitude Model</li>
+					<li><strong>CFMMOD</strong> CFMM with $a=1$</li>
+				</ul>
+			</li>
+			<li><strong>HR-NMF</strong> High Resolution NMF model</li>
+		</ul>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Evaluation Results</h2>
+		<img src="assets/images/boxplot.svg" width="100%" alt="" />
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Number of Components</h2>
+		<img src="assets/images/iterations.svg" width="100%" alt="" />
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<section>
+			<h2>Demo: Sax + Flute</h2>
+			<iframe src="assets/audio/commonfate/66-73.html" class="stretch"></iframe>
+		</section>
+		<section>
+			<h2>Demo: Viola + Flute</h2>
+			<iframe src="assets/audio/commonfate/42-73.html" class="stretch"></iframe>
+		</section>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Conclusion</h2>
+		<ul>
+			<li><strong>CFT</strong> a transformation based on a complex tensor representation computed from patches of the
+				STFT </li>
+			<li><strong>CFM</strong> derived from the idea of humans perceiving common modulation over time as one source.
+			</li>
+			<li>Our results on unisonous musical instruments indicate that this method can perform well for this scenario.
+			</li>
+		</ul>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>
+			Accompaniment Data
+		</h2>
+		<table>
+			<tr>
+				<td>
+					Python Implementation
+				</td>
+				<td>
+					<a href="http://github.com/aliutkus/commonfate">github.com/aliutkus/commonfate</a><br>
+					pip install commonfate
+				</td>
+			</tr>
+			<tr>
+				<td>
+					More examples
+				</td>
+				<td>
+					<a href="http://www.loria.fr/~aliutkus/cfm/">www.loria.fr/~aliutkus/cfm/</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Presentation Slides
+				</td>
+				<td>
+					<a href="http://faroit.github.io/commonfate_slides/">faroit.github.io/commonfate_slides</a>
+				</td>
+			</tr>
+		</table>
+	</section>
+
+<section>
+	<section>
+		<h2>A brief history: model-driven methods</h2>
+		<h3>Harmonicity for the lead</h3>
+
+		<div class="container">
+			<div class="col">
+				<ul>
+					<li>Pitch detection</li>
+					<li>Clean voices</li>
+					<li>"Metallic" artifacts</li>
+				</ul>
+			</div>
+			<div class="col">
+				<img style="float:right" width="100%" src="assets/images/ReviewPaper_ Figure2_new.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>A brief history: model-driven methods</h2>
+		<h3>Redundancy for the accompaniment: NMF</h3>
+
+		<div class="container">
+			<div class="col">
+				<ul>
+					<li>Spectral templates</li>
+					<li>Low-rank assumptions</li>
+					<li>Bad generalization</li>
+				</ul>
+			</div>
+			<div class="col">
+				<img height="60%" src="assets/images/ReviewPaper_ Figure3.svg" alt="">
+			</div>
+		</div>
+
+		</section>
+
+	<section>
+		<h2>A brief history: model-driven methods</h2>
+		<h3>Redundancy for the accompaniment: RPCA</h3>
+		<div class="container">
+			<div class="col">
+				<ul>
+					<li>Low-rank for music</li>
+					<li>Vocals as unstructured</li>
+					<li>Strong interferences in general</li>
+				</ul>
+			</div>
+			<div class="col">
+				<img src="assets/images/ReviewPaper_ Figure4.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>A brief history: model-driven methods</h2>
+		<h3>Redundancy for the accompaniment: REPET</h3>
+		<div class="container">
+			<div class="col">
+				<ul>
+					<li>Repetitive music</li>
+					<li>Non-repetitive vocals</li>
+					<li>Solos in vocals</li>
+				</ul>
+			</div>
+			<div class="col">
+				<img src="assets/images/ReviewPaper_ Figure5.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>A brief history: model-driven methods</h2>
+		<h3> Modeling both lead and accompaniment: source filter</h3>
+
+		<div class="container">
+			<div class="col">
+				<ul>
+					<li>Harmonic vocals</li>
+					<li>Low-rank music</li>
+					<li>Poor generalization</li>
+				</ul>
+			</div>
+			<div class="col">
+				<img src="assets/images/ReviewPaper_ Figure7.svg" alt="">
+			</div>
+		</div>
+	</section>
+</section>
+
+
+	<section>
+		<h2>Summary</h2>
+		<h3>Processing Methods for Separation</h3>
+		<ul>
+			<li>Unison Source Separation Scenario</li>
+			<li>Importance of Modulations
+				<ul>
+					<li>Informed by $F_0$ to apply time warping</li>
+					<li>Common Fate Representation for unknown modulations</li>
+					<li>Common Fate Model, a suitable Factorization Model</li>
+					<li>Deep Common Fate, supervised separation</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Summary</h2>
+		<h3>Other contributions</h3>
+		<div class="container">
+			<div class="col" style="flex: 2">
+				<ul>
+					<li>SiSEC Organization 2016, 2018
+						<ul>
+							<li></li>
+						</ul>
+					</li>
+					<li>DSD100, MUSDB18 Dataset
+						<ul>
+							<li>largest datasets up to date</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		
+			<div class="col" style="background-color:brown">
+				test
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h1>Conclusion</h1>
+
+	</section>
+
+	<section>
+		<h1></h1>
+	</section>
+	</div>
+	<div class='footer'>
+		<div id="copyright">Fabian-Robert Stöter</div>
+		<img src="css/theme/alabs/alabs_logo.svg" alt="Logo" />
+		<div id="middlebox">Separation and Count Estimation for Audio Sources Overlapping in Time and Frequency</div>
+	</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		
+		Reveal.initialize({
+			math: {
+				mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				TeX: {
+					extensions: ["color.js"]
+				}
+			},
+			controls: false,
+			progress: true,
+			history: true,
+			center: false,
+			slideNumber: true,
+			minScale: 0.1,
+			maxScale: 5,
+			transition: 'none', //
+
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/math/math.js', async: true },
+				{ src: 'node_modules/reveald3/reveald3.js' },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
 	</body>
 </html>

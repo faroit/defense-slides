@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CFM Demo</title>
+    <meta name="description" content="CFM Demo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="International Audio Laboratories Erlangen">
+    <link type="text/css" rel="stylesheet" rev="stylesheet" media="screen" href="../../../lib/css/multitrack.css" />
+    <link type="text/css" rel="stylesheet" rev="stylesheet" media="screen" href="../../../lib/font-awesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="../../../lib/js/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+    @import url(../../../lib/font/fira/fira-sans.css);
+
+    body {
+      font-family: 'Fira Sans', sans-serif;
+      background-color:transparent;
+    }
+    </style>
+</head>
+
+<body>
+    <div class='player'>
+        <img class="seekable" src="42-73_mix.png" data-style="width: auto; margin: 0px -10px 0px -12px;">
+        <audio title="Mix" src="42-73_mix.wav" style="background-color:  rgba(0, 0, 0, 0)" data-img="42-73_mix.png"></audio>
+        <audio title="Viola" src="42-73_src42.wav" style="background-color:  rgba(0, 0, 0, 0)" data-img="42-73_src42.png"></audio>
+        <audio title="Flute" src="42-73_src73.wav" style="background-color:  rgba(0, 0, 0, 0); border-right: 2px solid black" data-img="42-73_src73.png"></audio>
+        <audio title="Viola" src="42-73_nmf_42.wav"  style="background-color:  rgba(89, 125, 190, 0.6)" data-img="42-73_nmf_42.png"></audio>
+        <audio title="Flute" src="42-73_nmf_73.wav"  style="background-color:  rgba(89, 125, 190, 0.52)" data-img="42-73_nmf_73.png"></audio>
+
+        <!-- <audio title="Viola" src="42-73_mod_42.wav"  style="background-color:  rgba(118, 191, 14, 0.6)" data-img="42-73_mod_42.png"></audio>
+        <audio title="Flute" src="42-73_mod_73.wav"  style="background-color:  rgba(118, 191, 14, 0.52)" data-img="42-73_mod_73.png"></audio> -->
+
+        <audio title="Viola" src="42-73_cfm_42.wav" style="background-color:  rgba(175, 133, 190, 0.6)" data-img="42-73_cfm_42.png"></audio>
+        <audio title="Flute" src="42-73_cfm_73.wav"  style="background-color:  rgba(175, 133, 190, 0.52)" data-img="42-73_cfm_73.png"></audio>
+
+    </div>
+
+    <span style="margin-left:130px; font-weight: 400; font-size: 20px">
+        Originals
+    </span>
+
+    <span style="margin-left:200px; color: rgba(89, 125, 190, 1); font-weight: 400; font-size: 20px">
+        NMF
+    </span>
+
+    <!-- <span style="margin-left:130px; color: rgba(118, 191, 14, 1); font-weight: 400; font-size: 20px">
+        MOD NTF
+    </span> -->
+
+    <span style="margin-left:130px; color: rgba(175, 133, 190, 1); font-weight: 400; font-size: 20px">
+        CFM
+    </span>
+
+    <script type="text/javascript" src="../../../lib/js/player.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var settings = {
+              onlyradiosolo: true,
+              globalsolo: true,
+              repeat: false,
+              switchimage: true,
+            };
+            $(".player").multitrackAudioPlayer(settings);
+        });
+    </script>
+
+</body>
+</html>

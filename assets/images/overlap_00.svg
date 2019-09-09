@@ -7,7 +7,7 @@
     <g transform="matrix(1,0,0,1,-40,60)">
         <path d="M640,140L1040,140" style="fill:none;stroke:rgb(214,0,0);stroke-width:8px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
-    <g transform="matrix(1,0,0,1,46.5895,20)">
+    <g transform="matrix(1,0,0,1,30.9,-480)">
         <text x="320px" y="554px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:72px;">no o<tspan x="463.928px 498.632px " y="554px 554px ">ve</tspan>rlap</text>
     </g>
 </svg>

@@ -220,66 +220,106 @@
 	</section>
 
 	<section>
+		<h2>Known Modulation</h2>
+	</section>
+
+	<section>
+		<section>
 			<h2>Known Modulation</h2>
-			<h3>Modeling Instationary Signals</h3>
+			<h3>Existing Models</h3>
 	
 			<div class="container">
 				<div class="col">
 					<ul>
-						<li>TF Classification <a class='ref' href="#">Hu 2002</a></li>
 						<li>Source/filter model <a class='ref' href="#">Durrieu 2010</a></li>
-						<li>Spectral Comb Filter <a class='ref' href="#">Cano 2012</a></li>
-					</ul>
-					<br><br>
-					<h3>Proposed</h3>
-					<ul>
-						<li>Use Time Warping <a class='ref' href="#">Stöter 2014</a></li></li>
-						<li>Filter in time domain
-							<ul>
-								<li>less artifacts</li>
-								<li>required: accurate F0</li>
-							</ul>
+						<li>HR-NMF <a class='ref' href="#">Badeau 2011</a></li>
+						<li>Modulation tensor <a class='ref' href="#">Barker 2013</a>
 						</li>
-						
 					</ul>
+					<h3>Proposed Model</h3>
+
 				</div>
 				<div class="col">
 					<img style="float:right" width="100%" src="assets/images/ReviewPaper_ Figure2.svg" alt="">
-					<br>
 				</div>
 			</div>
-	</section>
-
-	<section>
-		<h2>MUSERC: MUlti SEnsor Recordings: Cello</h2>
-		<video controls>
-			<source data-src="assets/video/cello.mp4" type="video/mp4" />
-		</video>
-	</section>
-
-	<section>
-		<h2>Unknown Modulation</h2>
-		<h3>Modeling Instationary Signals</h3>
+		</section>
 	
-		<div class="container">
-			<div class="col">
-				<ul>
-					<li>HR-NMF <a class='ref' href="#">Baedau 2011</a></li>
-					<li>Modulation Tensor <a class='ref' href="#">Barker 2013</a></li>
-				</ul>
-				<br><br>
-				<h3>Proposed</h3>
-				<ul>
-					<li>Novel Representation</li>
-					<li>Suitable Separation Model</li>
-				</ul>
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3>Redundancy for the accompaniment: NMF</h3>
+	
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Spectral templates</li>
+						<li>Low-rank assumptions</li>
+						<li>Bad generalization</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img height="60%" src="assets/images/ReviewPaper_ Figure3.svg" alt="">
+				</div>
 			</div>
-			<div class="col">
-				<img width="60%" src="assets/images/ReviewPaper_ Figure3.svg" alt="">
-				<br>
+	
+		</section>
+	
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3>Redundancy for the accompaniment: RPCA</h3>
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Low-rank for music</li>
+						<li>Vocals as unstructured</li>
+						<li>Strong interferences in general</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img src="assets/images/ReviewPaper_ Figure4.svg" alt="">
+				</div>
 			</div>
-		</div>
+		</section>
+	
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3>Redundancy for the accompaniment: REPET</h3>
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Repetitive music</li>
+						<li>Non-repetitive vocals</li>
+						<li>Solos in vocals</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img src="assets/images/ReviewPaper_ Figure5.svg" alt="">
+				</div>
+			</div>
+		</section>
+	
+		<section>
+			<h2>A brief history: model-driven methods</h2>
+			<h3> Modeling both lead and accompaniment: source filter</h3>
+	
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Harmonic vocals</li>
+						<li>Low-rank music</li>
+						<li>Poor generalization</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img src="assets/images/ReviewPaper_ Figure7.svg" alt="">
+				</div>
+			</div>
+		</section>
 	</section>
+<!-- ----------------------------------------------------------------------------------------- -->
+
+
+
 	<!-- ----------------------------------------------------------------------------------------- -->
 	<section data-background="assets/images/flock.jpg" data-state="no-title-footer">
 		<p style="background-color:rgba(255, 255, 255, .5) ; padding: 10px; color:black; margin-top: 15em">
@@ -344,11 +384,6 @@
 			<li>Patches span/merge several frequency bins</li>
 			<li>Results in <strong>modulation texture</strong></li>
 		</ul>
-		<p></p>
-		<h3>Common Fate Model</h3>
-		<ul>
-			<li>Using Non-Negative Tensor Factorization</li>
-		</ul>
 	</section>
 
 	<section>
@@ -363,25 +398,10 @@
 	</section>
 
 	<section>
-		<h2>Extension music separation</h2>
-		<ul>
-			<li>Common fate transform + Deep Neural Networks</li>
-			<li>Model from Uhlich 2015</li>
-			<li>Improvements compared to STFT</li>
-		</ul>
-		<p></p>
-		<img width="80%" src="assets/images/uhlich_dnn.svg" alt="">
+		<h2>Extension for real world data</h2>
+		<h3>SiSEC 2017</h3>
+		<img src="assets/images/sisec17.svg" alt="">
 	</section>
-
-		<section>
-			<h2>Extension for real world data</h2>
-			<h3>Results SiSEC 2016</h3>
-			<img src="assets/images/sisec17.svg" alt="">
-			<ul>
-				<li><a href="https://www.sisec17.audiolabs-erlangen.de/#/listen/21/STO1">DEMO</a></li>
-			</ul>
-		</section>
-
 
 	<section>
 		<h2>Summary</h2>
@@ -435,6 +455,177 @@
 		<h1 style='color:white; font-size: 2.4em'>Source Count Estimation</h1>
 	</section>
 
+	<section>
+			<div><h2>Open-Unmix</h2></div>
+			<h3>State-of-the-art Music Separation 2019</h3>
+	
+			<div class="fig-container" data-file="http://umx-sisec18.s3-website.eu-west-3.amazonaws.com/"
+				data-scroll="no" data-style="height: 430px; width: 800px;">
+			</div>
+		</section>
+
+	<section>
+		<h1>Separability</h1>
+		<div style=text-align:center>
+		<iframe width="850" height="600" seamless frameborder="0" scrolling="no"
+			src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTHKuFERJtSQw870QDSr2e339Qt1qQ_O_F5r_wjpnB2Vq9oIul9fIfIHI6XdzU0uo1CCAxvFZSX0PeJ/pubchart?oid=220738334&amp;format=image"></iframe>
+		</div>
+	</section>
+
+	<section>
+		<h2>NTF Comparison of number of components</h2>
+		<ul>
+			<li>All factorisations ran for 100 iterations and were repeated five times.</li>
+			<li>We chose $J = (2 \dots 6)$ components for each factorisation.</li>
+			<li>For j > 2 we used oracle clustering by SDR</li>
+		</ul>
+	</section>
+			
+	<section>
+		<h2>Dataset</h2>
+		<ul>
+			<li>Single pitches (C4 at 261.63 Hz)
+				<ul>
+					<li>Viola</li>
+					<li>Cello</li>
+					<li>Tenor sax</li>
+					<li>English horn</li>
+					<li>Flute</li>
+				</ul>
+			</li>
+			<li>$\rightarrow$ ten mixtures of two instruments each</li>
+			<li>Mixtures generated with a simple A — B — (A + B) scheme. </li>
+			<li>Data were encoded in 44.1 kHz / 16 bit.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Common Fate Transform</h2>
+		<img src="assets/images/cft_blocks.svg" width="100%" alt="" />
+	</section>
+
+	<section>
+		<div class="container">
+		
+			<div class="col">
+		<div class="fig-container" data-file="https://umxhq-demo.s3.eu-west-3.amazonaws.com/index.html" data-scroll="no"
+			data-style="height: 40vh; width: 100%;">
+		</div>
+
+			</div>
+		
+			<div class="col">
+		<div class="fig-container" data-file="https://umxpro-demo.s3.eu-west-3.amazonaws.com/index.html" data-scroll="no"
+			data-style="height: 40vh; width: 100%;">
+		</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Number of Components</h2>
+		<img src="assets/images/iterations.svg" width="100%" alt="" />
+	</section>
+			
+	<section>
+		<h2>Evaluation Results</h2>
+		<img src="assets/images/boxplot.svg" width="100%" alt="" />
+	</section>
+	<section data-state="no-title-footer" data-background="#ED8C01">
+		<h1 style='color:white; font-size: 2.4em'>Evaluation</h1>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<h2>Parameters</h2>
+		<ul>
+			<li>STFT Window Size: $1024$</li>
+			<li>STFT Hop Size: $512$</li>
+			<li>CFM Window Size $(Na,Nb) = (4, 64)$</li>
+			<li>CFM Hopsize $(Na,Nb) = (2, 32)$</li>
+	
+		</ul>
+	</section>
+
+	<section>
+		<h2>Signal Separation</h2>
+		<ol>
+			<li>Compute the CFT from audio signal to get tensor $\mathcal{V}$</li>
+			<li>Take the magnitude $|\mathcal{V}|$</li>
+			<li>Initialise $\mathcal{A}$ and $\mathbf{h}$ with random non-negative values</li>
+			<li>Apply multiplicative update rule to minimize $\beta$-divergence</strong></li>
+			<li>Synthesise factorised components using Wiener filtering</strong></li>
+			<li>Inverse CFT</strong></li>
+		</ol>
+	</section>
+	<section>
+		<h2>NMF</h2>
+		<p>
+			<img src="assets/images/nmf.svg" width="100%" alt="" />
+			$$\sum\limits_{j=1}^{J} \mathbf{w}_{j}(f) \circ \mathbf{h}_{j}(t) $$
+		</p>
+	</section>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+		<section>
+			<h2>Common Fate Model</h2>
+			<p>
+				<img src="assets/images/cfm_unfolded.svg" width="100%" alt="" />
+				$$\sum\limits_{j=1}^{J} \mathcal{A}_{j}(a,b,f) \circ \mathbf{h}_{j}(t)$$
+			</p>
+		</section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+		<section>
+			<h2>Common Fate Model</h2>
+			<p>
+				<img src="assets/images/cfm.svg" width="100%" alt="" />
+				$$\sum\limits_{j=1}^{J} \mathcal{A}_{j}(a,b,f) \circ \mathbf{h}_{j}(t)$$
+			</p>
+		</section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+		<section>
+			<h2>CPD/PARAFAC/NTF</h2>
+			<!-- <ul>
+									<li>Take the “outer-product” of corresponding columns from each factor matrix to form a simple (rank-1) tensor</li>
+								</ul> -->
+			<p>
+				<img src="assets/images/cpd.svg" width="100%" alt="" />
+				$$\sum\limits_{j=1}^{J} \mathbf{w}_{j}(f) \circ \mathbf{m}_{j}(b) \circ \mathbf{h}_{j}(t)$$
+			</p>
+			<aside class="notes">
+				<ul>
+					<li>Can be extended to $n$-dimensions</li>
+					$\sum\limits_{j=1}^{J} \mathbf{w}_{j}(f) \circ \mathbf{m}_{j}(b) \circ \mathbf{h}_{j}(t) \circ
+					\mathbf{q}_{j}(t)$
+				</ul>
+			</aside>
+		</section>
+		<!-- ----------------------------------------------------------------------------------------- -->
+	</section>
+	
+	<section>
+		<h2>Evaluation Results</h2>
+		<div class="container">
+			<div class="col">
+				<ul style="font-size: 24px">
+					<li><strong>NMF</strong> Non-Negative Matrix Factorization</li>
+					<li><strong>MOD</strong> CP on modulation spectrogram</li>
+					<li><strong>CFM</strong> Common Fate Model
+						<ul>
+							<li><strong>CFMM</strong> Common Fate Magnitude Model</li>
+							<li><strong>CFMMOD</strong> CFMM with $a=1$</li>
+						</ul>
+					</li>
+					<li><strong>HR-NMF</strong> High Resolution NMF model</li>
+				</ul>
+			</div>
+	
+			<div class="col">
+				<img src="assets/images/boxplot_justsdr.svg" width="80%" alt="" />
+			</div>
+		</div>
+	</section>
 	</div>
 	<div class='footer'>
 		<div id="copyright">Fabian-Robert Stöter</div>

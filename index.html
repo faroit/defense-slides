@@ -131,7 +131,7 @@
 	</section>
 
 	<section data-background="#ED8C01" data-state="no-title-footer">
-		<h1 style='color:white; font-size: 2.4em'>Source Separation</h1>
+		<h1 style='margin-top: 200px; color: white; font-size: 2.4em'>Source Separation</h1>
 	</section>
 
 	<!-- <section>
@@ -278,10 +278,17 @@
 			</div>
 		</div>
 	</section>
-	<!-- ----------------------------------------------------------------------------------------- -->
-	<section data-background="assets/images/flock.jpg" data-state="no-title-footer">
-		<p style="background-color:rgba(255, 255, 255, .5) ; padding: 10px; color:black; margin-top: 15em">
-			<strong>Common Fate Transform:</strong> groups common modulation textures to sound sources.
+
+	<section data-background="assets/images/flocks.png" data-state="no-title-footer">
+		<p style="background-color:rgba(255, 255, 255, .7) ; padding: 10px; color:black; margin-top: 15em">
+			<strong>Common Fate:</strong> groups common modulation textures to sources.
+		</p>
+	
+	</section>
+
+	<section data-background-video="assets/video/flocks.mov" data-state="no-title-footer" data-background-video-muted>
+		<p style="background-color:rgba(255, 255, 255, .7) ; padding: 10px; color:black; margin-top: 15em">
+			<strong>Common Fate:</strong> groups common modulation textures to sources.
 		</p>
 
 	</section>
@@ -397,47 +404,116 @@
 		</ul>
 	</section>
 
-	<section>
-		<h2>Further Contributions</h2>
-		<div class="container">
-			<div class="col" style="flex: 2">
-			<h3>Data</h3>
-			<ul>
-				<li>Unison Dataset <a href="https://doi.org/10.5281/zenodo.1467921"><img
-							src="https://zenodo.org/badge/DOI/10.5281/zenodo.1467921.svg" alt="DOI"></a>
-				</li>
-				<li>Cello Dataset <a href="https://doi.org/10.5281/zenodo.1560651"><img
-							src="https://zenodo.org/badge/DOI/10.5281/zenodo.1560651.svg" alt="DOI"></a></li>
-				<li>DSD100, MUSDB18 Dataset</li>
-			</ul>
-			<h3>Software Packages</h3>
-			<ul>
-				<li><a href="http://github.com/aliutkus/commonfate">commonfate</a></li>
-				<li>musdb</li>
-				<li>museval</li>
-			</ul>
-			<h3>Community</h3>
-			<ul>
-				<li>SiSEC Organization 2016, 2018</li>
-				<li><a href="http://sisec17.audiolabs-erlangen.de">Interactive Evaluation</a></li>
-			</ul>
 
-			</div>
-		
-			<div class="col">
-				
-			</div>
-		</div>
-	</section>
 	<section data-background="#ED8C01" data-state="no-title-footer">
 		<h1 style='color:white; font-size: 2.4em'>Source Count Estimation</h1>
 	</section>
 
+	<section>
+		<h2>Strategies to Count</h2>
+		<div class="container">
+			<div class='col fragment' style="padding: 1em">
+				<img src="assets/images/counting_detection.svg" alt=""></br>
+			</div>
+			<div class='col fragment' style="padding: 1em">
+				<img src="assets/images/counting_estimation.svg" alt="">
+			</div>
+			<div class='col fragment' style="padding: 1em">
+				<img src="assets/images/counting_subitizing.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Research Questions</h2>
+		<ul>
+			<li>What are the limitations of subitizing for humans?</li>
+			<li>Can we directly count/subitize audio sources?</li>
+			<li>Can we build a machine to solve these tasks?</li>
+			<li>Would a machine be subject to the same limitations?</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Experiment I</h2>
+		<h3>What is the number of concurrent speakers?</h3>
+			<div class="container">
+				<div class='col' style="padding-top: 1em">
+					<ul>
+						<li>Experiment with English</li>
+						<li>n=40</li>
+						<li>"One-Two-Three-(Four)-Many"</li>
+						<li><a href="https://denumerate.app">https://denumerate.app</a></li>
+					</ul>				
+				</div>
+				<div class='col' style="padding-top: 1em">
+					<img src="assets/images/speech_experiment.svg" alt="">
+				</div>
+			</div>
+	
+		</section>
+
+		<section>
+			<h2>Experiment II</h2>
+			<h3>What is the number of instruments in music?</h3>
+			<div class="container">
+				<div class='col' style="padding-top: 1em">
+					<ul>
+						<li>12 music stimuli</li>
+						<li>Unison mostly detected</li>
+						<li>Musicians vs. Non-Musicians</li>
+						<li>First large-scale web-audio based experiment (n=1168)</li>
+					</ul>
+				</div>
+				<div class='col' style="padding-top: 1em">
+					<img src="assets/images/count_instr.svg" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>CountNet Demo</h2>
+			<video controls loop>
+				<source data-src="assets/video/countnet-demo.mp4" type="video/mp4" />
+			</video>
+		</section>
+	<section>
+		<h2>Further Contributions</h2>
+		<div class="container">
+			<div class="col" style="flex: 2">
+				<h3>Data</h3>
+				<ul>
+					<li>Unison Dataset <a href="https://doi.org/10.5281/zenodo.1467921"><img
+								src="https://zenodo.org/badge/DOI/10.5281/zenodo.1467921.svg" alt="DOI"></a>
+					</li>
+					<li>Cello Dataset <a href="https://doi.org/10.5281/zenodo.1560651"><img
+								src="https://zenodo.org/badge/DOI/10.5281/zenodo.1560651.svg" alt="DOI"></a></li>
+					<li>DSD100, MUSDB18 Dataset</li>
+				</ul>
+				<h3>Software Packages</h3>
+				<ul>
+					<li><a href="http://github.com/aliutkus/commonfate">commonfate</a></li>
+					<li>musdb</li>
+					<li>museval</li>
+				</ul>
+				<h3>Community</h3>
+				<ul>
+					<li>SiSEC Organization 2016, 2018</li>
+					<li><a href="http://sisec17.audiolabs-erlangen.de">Interactive Evaluation</a></li>
+				</ul>
+	
+			</div>
+	
+			<div class="col">
+	
+			</div>
+		</div>
+	</section>
 	</div>
 	<div class='footer'>
 		<div id="copyright">Fabian-Robert Stöter</div>
 		<img src="css/theme/alabs/alabs_logo.svg" alt="Logo" />
-		<div id="middlebox">Separation and Count Estimation for Audio Sources Overlapping in Time and Frequency</div>
+		<div id="middlebox">Separation and Count Estimation for Audio Sources</br> Overlapping in Time and Frequency</div>
 	</div>
 	</div>
 
@@ -462,6 +538,9 @@
 					extensions: ["color.js"]
 				}
 			},
+				// specified using percentage units.
+			width: 960,
+			height: 700,
 			controls: false,
 			progress: true,
 			history: true,

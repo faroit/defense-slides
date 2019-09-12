@@ -355,6 +355,14 @@ body {
   margin-left: 1em;
   list-style-type: none; }
 
+.reveal .slides section .fragment.step-fade-in-then-out {
+  opacity: 0;
+  display: none; }
+
+.reveal .slides section .fragment.step-fade-in-then-out.current-fragment {
+  opacity: 1;
+  display: inline; }
+
 .reveal ul > li:before {
   content: "■ ";
   color: #ED8C01;

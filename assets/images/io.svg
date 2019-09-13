@@ -111,7 +111,7 @@
         <text x="4511.81px" y="4493.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">- Output c<tspan x="4931px " y="4493.99px ">o</tspan>rr<tspan x="5054.39px " y="4493.99px ">e</tspan>sponds</text>
         <text x="5428.48px" y="4493.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">t<tspan x="5460.65px " y="4493.99px ">o</tspan> a</text>
         <text x="4511.81px" y="4585.66px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">pr<tspan x="4600.73px " y="4585.66px ">o</tspan>bability distribution</text>
-        <text x="4511.81px" y="4677.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">o<tspan x="4563.51px 4607.69px " y="4677.33px 4677.33px ">ve</tspan>r these classes.</text>
+        <text x="4511.81px" y="4677.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">o<tspan x="4563.51px 4607.69px " y="4677.33px 4677.33px ">ve</tspan>r classes.</text>
     </g>
     <g transform="matrix(1,0,0,1,-2656.72,-3073.44)">
         <text x="4511.81px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">- k is enc<tspan x="4884.25px " y="4352.33px ">o</tspan>ded as ﬂ<tspan x="5292.44px " y="4352.33px ">o</tspan>at</text>
@@ -119,9 +119,13 @@
         <text x="4511.81px" y="4585.66px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">assumed t<tspan x="4940.9px " y="4585.66px ">o</tspan> be Gaussian</text>
     </g>
     <g transform="matrix(1,0,0,1,-1433.04,-3075.62)">
-        <text x="4511.81px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">- Output is λ par<tspan x="5188.13px " y="4352.33px ">a</tspan>met<tspan x="5399.14px " y="4352.33px ">e</tspan>r</text>
-        <text x="4511.81px" y="4493.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">-  λ<tspan x="4643.17px " y="4493.99px ">:</tspan>  R<tspan x="4768.29px 4818.16px 4850.34px " y="4493.99px 4493.99px 4493.99px ">ate</tspan> par<tspan x="5062.91px " y="4493.99px ">a</tspan>met<tspan x="5273.93px " y="4493.99px ">e</tspan>r</text>
-        <text x="4511.81px" y="4635.66px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">- k as mode/<tspan x="5044.39px " y="4635.66px ">m</tspan>edian of λ</text>
+        <text x="4511.81px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">-</text>
+        <text x="4575.79px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">Output is λ par<tspan x="5190.88px " y="4352.33px ">a</tspan>m</text>
+        <text x="5319.3px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">e</text>
+        <text x="5366.05px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">t<tspan x="5398.23px " y="4352.33px ">e</tspan></text>
+        <text x="5448.64px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">r</text>
+        <text x="5506.49px" y="4352.33px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">of</text>
+        <text x="4511.81px" y="4443.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">P<tspan x="4563.24px " y="4443.99px ">o</tspan>isson distribution</text>
     </g>
     <g transform="matrix(1,0,0,1,-3839.01,-2724.01)">
         <text x="4440.94px" y="4863.45px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">Softma<tspan x="4735.74px " y="4863.45px ">x</tspan></text>
@@ -139,7 +143,7 @@
         <text x="4440.94px" y="4863.45px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">E<tspan x="4486.32px 4527.11px 4577.9px 4627.76px 4677.81px 4724.56px 4774.61px 4804.04px 4826.22px 4872.42px " y="4863.45px 4863.45px 4863.45px 4863.45px 4863.45px 4863.45px 4863.45px 4863.45px 4863.45px 4863.45px ">xponential</tspan></text>
     </g>
     <g transform="matrix(1,0,0,1,-1333.55,-2935.38)">
-        <text x="4440.94px" y="4863.45px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">median(λ)</text>
+        <text x="4440.94px" y="4863.45px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">mode or median(λ)</text>
     </g>
     <g transform="matrix(1,0,0,1,-4052.78,-2752.54)">
         <text x="4114.69px" y="4888.47px" style="font-family:'FiraSans-Bold', 'Fira Sans', sans-serif;font-weight:700;font-size:91.667px;">A<tspan x="4168.32px " y="4888.47px ">c</tspan>tivation</text>
@@ -167,7 +171,7 @@
         <text x="4440.94px" y="4863.45px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">M<tspan x="4513.45px " y="4863.45px ">e</tspan>an Squar<tspan x="4933.74px " y="4863.45px ">e</tspan>d Err<tspan x="5182.16px " y="4863.45px ">o</tspan>r</text>
     </g>
     <g transform="matrix(1,0,0,1,-1333.55,-2524.37)">
-        <text x="4440.94px" y="4863.45px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">Negativ<tspan x="4754.63px " y="4863.45px ">e</tspan> l<tspan x="4855.28px " y="4863.45px ">o</tspan>g lik<tspan x="5079.49px " y="4863.45px ">e</tspan>lihood</text>
+        <text x="4440.94px" y="4863.45px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:91.667px;fill:white;">P<tspan x="4492.37px " y="4863.45px ">o</tspan>isson Loss</text>
     </g>
     <g transform="matrix(1,0,0,1,-3929.85,-2550.68)">
         <text x="4205.3px" y="4888.47px" style="font-family:'FiraSans-Bold', 'Fira Sans', sans-serif;font-weight:700;font-size:91.667px;">Loss</text>

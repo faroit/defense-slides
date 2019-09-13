@@ -495,6 +495,22 @@
 			<img width="100%" src="assets/images/io.svg" alt="">
 		</section>
 
+		<section>
+			<section>
+				<h2>Architectures</h2>
+				<img width="120%" src="assets/images/architectures.svg" alt="">
+		
+			</section>
+			<section>
+				<h2>Architectures</h2>
+				<img width="120%" src="assets/images/networkoverview.svg" alt="">
+		
+			</section>
+			<section>
+				<h2>CRNN</h2>
+				<img width="120%" src="assets/images/nn.svg" alt="">
+			</section>
+		</section>
 
 		<section>
 			<h2>Superhuman</h2>
@@ -599,18 +615,12 @@
 		</section>
 
 		<section>
-			<h2>Architectures</h2>
-			<div class="container">
-				<div class="col">
-					<img src="assets/images/count_representation.svg" alt="">
-				</div>
-				<div class="col">
-					<img src="assets/images/count_network.svg" alt="">
-				</div>
-				<div class="col">
-					<img src="assets/images/count_output.svg" alt="">
-				</div>
-			</div>
+			<h2>Model selection</h2>
+			<img src="assets/images/countnet_parameters.svg" alt="">
+					<p class="fragment" style="width: 70%; margin: auto; background-color: orange; padding: 10px; color:white">
+						CountNet = STFT > CRNN > Classification
+					</p>
+
 		</section>
 
 		<section>
@@ -624,17 +634,55 @@
 
 		</section>
 
-		<section>
-			<h2>Architectures</h2>
-			<img width="120%" src="assets/images/networkoverview.svg" alt="">
+		<section data-background="assets/images/blackbox.jpg" data-state="no-title-footer">
+		
 		</section>
 
 		<section>
 			<h2>Understanding CountNet</h2>
 			<h3 style="margin-top: -20px">Convolutional Filters</h3>
 			<img width="120%" src="assets/images/convfilters.svg" alt="">
+			<p style="font-size: 24px; width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
+				Does CountNet understand phonemes?
+			</p>
+
 		</section>
 
+		<section>
+			<h2>Understanding CountNet</h2>
+			<h3 style="margin-top: -20px">Ablation Study</h3>
+			<ul>
+				<li>Using phonetic annotation in TIMIT dataset</li>	
+				<li>Measure speaking rate</li>
+				<li>Syllables per second => Modulation of Speech</li>
+			</ul>
+			<img width="90%" src="assets/images/phonemes.svg" alt="">
+		</section>
+
+		<section>
+			<h2>Understanding CountNet</h2>
+			<h3 style="margin-top: -20px">Results</h3>
+			<div class="container">
+				<div class="col">
+					<ul>
+						<li>Retrained model on TIMIT</li>
+						<li>Select k=6 items (balanced)</li>
+						<li>Errors only <emph>underestimation</emph></li>
+						<li>Significant effect of speaking rate</li>
+						<li>> Speaking very slow may result in understimation</li>
+					</ul>
+				<p style="font-size: 24px; width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
+					CountNet used speech modulations
+				</p>
+				</div>
+
+				<div class="col" style="flex: 0.5">
+					<img width="70%" src="assets/images/speaking_rate.svg" alt="">
+				</div>			
+			</div>
+		</section>
+
+		
 		<section>
 			<h2>Conclusion</h2>
 			<ul>
@@ -678,9 +726,13 @@
 			</div>
 		</div>
 	</section>
+	<section>
+		<img width="120%" src="assets/images/trends.svg" alt="">
+	</section>
+
 	</div>
 	<div class='footer'>
-		<div id="copyright">Fabian-Robert Stöter</div>
+		<div id="copyright">Fabian-Robert Stöter</br>PhD Defense</div>
 		<img src="css/theme/alabs/alabs_logo.svg" alt="Logo" />
 		<div id="middlebox">Separation and Count Estimation for Audio Sources</br> Overlapping in Time and Frequency</div>
 	</div>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 5591 2412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(2.05267,0,0,0.845035,4030.03,179.889)">
+        <path d="M519.685,188.976L519.685,2027.01" style="fill:none;stroke:black;stroke-width:5.31px;"/>
+    </g>
+    <g transform="matrix(2.05267,0,0,11.4693,4117.5,-2152.98)">
+        <rect x="236.22" y="236.22" width="472.441" height="94.488" style="fill:rgb(255,121,245);stroke:black;stroke-width:0.51px;"/>
+    </g>
+    <g transform="matrix(2.05267,0,0,2.11606,4117.5,1313.98)">
+        <rect x="236.22" y="236.22" width="472.441" height="94.488" style="fill:white;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(2.05267,0,0,2.19133,1379.02,1343.53)">
+        <text x="1673.08px" y="273.396px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:45.833px;">Output La<tspan x="1878.55px 1901.06px " y="273.396px 273.396px ">ye</tspan>r</text>
+    </g>
+    <g transform="matrix(2.05267,0,0,2.18995,1499.15,557.59)">
+        <text x="1688.76px" y="273.396px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:45.833px;">M<tspan x="1724.92px " y="273.396px ">o</tspan>del</text>
+    </g>
+    <g transform="matrix(1.20542,0,0,0.40573,-4860.32,-1065.78)">
+        <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(204,185,116);"/>
+    </g>
+    <g transform="matrix(1.78788,0,0,0.40573,-5607.09,-1067.4)">
+        <g opacity="0.35">
+            <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(204,185,116);"/>
+        </g>
+    </g>
+    <g transform="matrix(1.20542,0,0,0.40573,-4860.32,-585.777)">
+        <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(85,168,104);"/>
+    </g>
+    <g transform="matrix(1.78788,0,0,0.40573,-5607.09,-585.869)">
+        <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(85,168,104);fill-opacity:0.57;"/>
+    </g>
+    <g transform="matrix(1.20972,0,0,0.40573,-4884.26,-108.004)">
+        <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(76,114,176);"/>
+    </g>
+    <g transform="matrix(1.78022,0,0,0.40573,-5564.38,-108.004)">
+        <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(76,114,176);fill-opacity:0.57;"/>
+    </g>
+    <g transform="matrix(1.20542,0,0,0.40573,-4860.32,374.223)">
+        <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(130,114,178);"/>
+    </g>
+    <g transform="matrix(1.78022,0,0,0.40573,-5564.38,373.529)">
+        <g opacity="0.57">
+            <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(130,114,178);"/>
+            <g transform="matrix(0.561728,0,0,2.46469,1840.51,-3847.81)">
+                <text x="4199.47px" y="2638.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:16px;">•</text>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1.19947,0,0,0.40573,-4827.14,874.131)">
+        <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(196,79,81);"/>
+    </g>
+    <g transform="matrix(1.78022,0,0,0.40573,-5564.38,874.131)">
+        <g opacity="0.57">
+            <rect x="4199.47" y="2627.04" width="1375.33" height="985.651" style="fill:rgb(196,79,81);"/>
+            <g transform="matrix(0.561728,0,0,2.46469,1840.51,-3847.81)">
+                <text x="4199.47px" y="2638.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:16px;">•</text>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-4177.34,-3031.04)">
+        <text x="4488.19px" y="3206.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:150px;fill:white;">RNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-4178.19,-2552.77)">
+        <text x="4488.19px" y="3206.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:150px;fill:white;">CNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-4173.26,-2059.48)">
+        <text x="4488.19px" y="3206.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:150px;fill:white;">F-CNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-4175.72,-1591.04)">
+        <text x="4488.19px" y="3206.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:150px;fill:white;">CRNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-4173.26,-1086.99)">
+        <text x="4488.19px" y="3206.99px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:150px;fill:white;">F-CRNN</text>
+    </g>
+    <g transform="matrix(2.05267,0,0,2.18995,4133.41,-321.89)">
+        <rect x="236.22" y="236.22" width="472.441" height="94.488" style="fill:white;stroke:black;stroke-width:1.96px;"/>
+    </g>
+    <g transform="matrix(2.05267,0,0,2.18995,1550.87,-269.532)">
+        <text x="1673.08px" y="273.396px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:45.833px;">Input</text>
+    </g>
+    <g transform="matrix(1,0,0,1,310.85,243.934)">
+        <text x="0px" y="64px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:85.333px;fill:white;">Bidir<tspan x="183.125px " y="64px ">e</tspan>ctional l<tspan x="543.744px " y="64px ">o</tspan>ng shor<tspan x="884.053px 914.005px 948.395px 978.347px " y="64px 64px 64px 64px ">t-te</tspan>rm memor<tspan x="1430.78px " y="64px ">y</tspan></text>
+    </g>
+    <g transform="matrix(1,0,0,1,310,722.212)">
+        <text x="0px" y="64px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:85.333px;fill:white;">C<tspan x="46.933px 96.768px 145.92px 187.051px " y="64px 64px 64px 64px ">onvo</tspan>lutional Netw<tspan x="756.651px " y="64px ">o</tspan>rk</text>
+    </g>
+    <g transform="matrix(1,0,0,1,314.929,1215.5)">
+        <text x="0px" y="64px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:85.333px;fill:white;">Full-band ﬁlt<tspan x="500.736px 547.669px 579.755px " y="64px 64px 64px ">ers</tspan> CNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,312.465,1683.93)">
+        <text x="0px" y="64px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:85.333px;fill:white;">C<tspan x="46.933px " y="64px ">o</tspan>mbination of CNN + and RNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,314.929,2187.99)">
+        <text x="0px" y="64px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:85.333px;fill:white;">Full-band ﬁlt<tspan x="500.736px " y="64px ">e</tspan>r v<tspan x="644.352px 691.285px 723.371px " y="64px 64px 64px ">ers</tspan>ion of CRNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-521,-29.6352)">
+        <text x="2480px" y="164.427px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px 2579.28px " y="164.427px 164.427px ">Re</tspan>curr<tspan x="2782.8px " y="164.427px ">e</tspan>nt ar<tspan x="3012.18px " y="164.427px ">c</tspan>hit<tspan x="3157.76px " y="164.427px ">e</tspan>ctur<tspan x="3359.66px " y="164.427px ">e</tspan></text>
+        <text x="2480px" y="265.76px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px " y="265.76px ">G</tspan>ood f<tspan x="2783.32px " y="265.76px ">o</tspan>r t<tspan x="2919.25px " y="265.76px ">e</tspan>mpor<tspan x="3171.5px " y="265.76px ">a</tspan>l</text>
+        <text x="2504px" y="351.093px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">inf<tspan x="2606.4px " y="351.093px ">o</tspan>rmation</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-510,474.24)">
+        <text x="2480px" y="164.427px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px " y="164.427px ">3</tspan>x3 F<tspan x="2723.33px " y="164.427px ">i</tspan>lt<tspan x="2803.71px 2850.82px 2883.58px " y="164.427px 164.427px 164.427px ">ers</tspan> (<tspan x="2974.04px 3020.29px " y="164.427px 164.427px ">VG</tspan>Gish)</text>
+        <text x="2480px" y="265.76px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px " y="265.76px ">G</tspan>ood f<tspan x="2783.32px " y="265.76px ">o</tspan>r l<tspan x="2912.43px " y="265.76px ">o</tspan>cal f<tspan x="3124.91px " y="265.76px ">e</tspan>atur<tspan x="3332.61px " y="265.76px ">e</tspan>s</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-496.802,933.37)">
+        <text x="2480px" y="164.427px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px " y="164.427px ">F</tspan>ull-band ﬁlt<tspan x="3029.85px 3076.95px 3109.72px " y="164.427px 164.427px 164.427px ">ers</tspan> (3xF<tspan x="3328.94px " y="164.427px ">)</tspan></text>
+        <text x="2480px" y="265.76px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px 2579.28px " y="265.76px 265.76px ">Re</tspan>duc<tspan x="2766.68px " y="265.76px ">e</tspan>s number of par<tspan x="3430.14px " y="265.76px ">a</tspan>met<tspan x="3627.52px 3674.62px 3707.39px " y="265.76px 265.76px 265.76px ">ers</tspan></text>
+    </g>
+    <g transform="matrix(1,0,0,1,-500.5,1415)">
+        <text x="2480px" y="164.427px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px 2575.62px " y="164.427px 164.427px ">Co</tspan>mbination of CNN+RNN</text>
+        <text x="2480px" y="265.76px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px 2572.29px 2596.35px 2629.12px " y="265.76px 265.76px 265.76px 265.76px ">Firs</tspan>t: l<tspan x="2767.87px " y="265.76px ">o</tspan>cal f<tspan x="2980.35px " y="265.76px ">e</tspan>atur<tspan x="3188.05px " y="265.76px ">e</tspan>s</text>
+        <text x="2480px" y="367.093px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px " y="367.093px ">S</tspan>ec<tspan x="2662.83px " y="367.093px ">o</tspan>nd: gl<tspan x="2925.31px " y="367.093px ">o</tspan>bal t<tspan x="3150.25px " y="367.093px ">e</tspan>mpor<tspan x="3402.5px " y="367.093px ">a</tspan>l f<tspan x="3524.35px " y="367.093px ">e</tspan>atur<tspan x="3732.05px " y="367.093px ">e</tspan>s</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-494.067,1919.59)">
+        <text x="2480px" y="164.427px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px 2575.62px " y="164.427px 164.427px ">Co</tspan>mbination of CRNN and F-CNN</text>
+    </g>
+    <g transform="matrix(1,0,0,1,680,-28.0329)">
+        <text x="2480px" y="164.427px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px 2573.23px 2614.19px 2654.12px " y="164.427px 164.427px 164.427px 164.427px ">Exce</tspan>ll<tspan x="2750.72px " y="164.427px ">e</tspan>nt r<tspan x="2933.5px " y="164.427px ">e</tspan>sults in ASR<tspan x="3435.09px " y="164.427px ">,</tspan></text>
+        <text x="2504px" y="249.76px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">A<tspan x="2553.32px " y="249.76px ">c</tspan>tivity Det<tspan x="2947.31px " y="249.76px ">e</tspan>ction</text>
+    </g>
+    <g transform="matrix(1,0,0,1,690,460)">
+        <text x="2480px" y="164.427px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px 2580.31px 2613.08px " y="164.427px 164.427px 164.427px ">Bre</tspan>akthr<tspan x="2866.69px " y="164.427px ">o</tspan>ugh in Imag<tspan x="3366.66px " y="164.427px ">e</tspan>Net</text>
+        <text x="2480px" y="265.76px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">• <tspan x="2528px " y="265.76px ">A</tspan>lso depl<tspan x="2888.11px 2937.09px 2978.99px " y="265.76px 265.76px 265.76px ">oye</tspan>d in man<tspan x="3361.37px " y="265.76px ">y</tspan></text>
+        <text x="2504px" y="351.093px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:85.333px;">audio tasks</text>
+    </g>
+    <g transform="matrix(0.796059,0,0,2.52312,-1985.19,-10625.7)">
+        <path d="M8113.05,4662.6L8113.05,4676.33L8046.12,4655.21L8113.05,4634.09L8113.05,4647.82L8582.78,4647.82L8582.78,4662.6L8113.05,4662.6Z" style="fill:rgb(255,121,245);"/>
+    </g>
+</svg>

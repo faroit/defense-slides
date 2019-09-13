@@ -472,6 +472,125 @@
 		</section>
 
 		<section>
+			<h2>Results I</h2>
+
+			<div class="container">
+				<div class="col">
+					<ul style="font-size: 24px">
+						<li class="fragment">Excellent voice activity detection</li>
+						<li class="fragment">Overestimation between $2 < k < 6$</li>
+						<li class="fragment">Error rarely larger than $k=2$</li></k>
+					</ul>
+				</div>
+				<div class="col">
+					<img width="100%" src="assets/images/responses.svg" alt="">			
+				</div>
+				
+			</div>
+		</section>
+
+		<section>
+			<h2>Input and Output</h2>
+			<img width="100%" src="assets/images/io.svg" alt="">
+		</section>
+
+
+		<section>
+			<h2>Superhuman</h2>
+			<div class="container">
+				<div class="col">
+					<ul style="font-size: 24px">
+						<li class="fragment">Excellent voice activity detection</li>
+						<li class="fragment">Overestimation between $2 < k < 6$</li> <li class="fragment">Error rarely larger
+								than $k=2$</li>
+						</k>
+					</ul>
+				</div>
+				<div class="col">
+					<img width="100%" src="assets/images/superhuman.svg" alt="">
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<h2>Complexity</h2>
+			<div class="container">
+				<div class="col">
+					<ul style="font-size: 24px">
+						<li class="fragment">Excellent voice activity detection</li>
+						<li class="fragment">Overestimation between $2 < k < 6$</li> <li class="fragment">Error rarely larger
+								than $k=2$</li>
+						</k>
+					</ul>
+				</div>
+				<div class="col">
+					<img width="100%" src="assets/images/complexity.svg" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Results</h2>
+
+			<div class="container">
+				<div class='col'>
+					<div class="fig-container" data-file="assets/figures/original.html" data-style="height: 400px; width: 450px"></div>
+					<h4>Train: LibriSpeech</br>
+						Test: LibriSpeech
+					</h4>
+
+				</div>
+				<div class='col fragment step-fade-in-then-out'>
+				<ul style='font-size: 0.8em'>
+					<li>MEAN: $k=5$</li>
+					<li>VQ: K-Means of ${MFCC}[7]$</li>
+					<li>SVC: SVM Classification ${MFCC}_{20}$</li>
+					<li>SVR: SVM Regression ${MFCC}_{20}$</li>
+					<li>RNN: DNN Recurrent LSTM on STFT</li>
+					<li>CRNN: DNN LSTM+CNN on STFT</li>
+				</ul>
+				</div>
+
+				<div class='col fragment step-fade-in-then-out'>
+					<div class="fig-container" data-file="assets/figures/timit.html" data-style="height: 400px; width: 450px"></div>
+					<h4>Train: LibriSpeech</br>
+						Test: TIMIT
+					</h4>
+
+				</div>
+
+				<div class='col fragment step-fade-in-then-out'>
+					<div class="fig-container" data-file="assets/figures/chinese.html" data-style="height: 400px; width: 450px"></div>
+					<h4>Train: LibriSpeech</br>
+						Test: THCS10 🇨🇳
+					</h4>				
+				</div>
+
+				<div class='col fragment step-fade-in-then-out'>
+					<div class="fig-container" data-file="assets/figures/gains.html" data-style="height: 400px; width: 450px"></div>
+					<h4>Train: LibriSpeech</br>
+						Test: LibriSpeech +/- 6dB
+					</h4>
+				</div>
+
+				<div class='col fragment step-fade-in-then-out'>
+					<div class="fig-container" data-file="assets/figures/rev.html" data-style="height: 400px; width: 450px"></div>
+					<h4>Train: LibriSpeech</br>
+						Test: LibriSpeech Reverberated
+					</h4>
+				</div>
+
+				<div class='col fragment step-fade-in-then-out'>
+					<div class="fig-container" data-file="assets/figures/revrev.html" data-style="height: 400px; width: 450px"></div>
+					<h4>Train: LibriSpeech Reverberated</br>
+						Test: LibriSpeech Reverberated
+					</h4>
+				</div>
+			</div>				
+		</section>
+
+		<section>
 			<h2>CountNet Demo</h2>
 			<video controls loop>
 				<source data-src="assets/video/countnet-demo.mp4" type="video/mp4" />
@@ -479,22 +598,51 @@
 		</section>
 
 		<section>
-			<h2>Results</h2>
+			<h2>Architectures</h2>
 			<div class="container">
-				<div class='col fragment' style="padding-top: 1em">
+				<div class="col">
+					<img src="assets/images/count_representation.svg" alt="">
+				</div>
+				<div class="col">
+					<img src="assets/images/count_network.svg" alt="">
+				</div>
+				<div class="col">
+					<img src="assets/images/count_output.svg" alt="">
+				</div>
+			</div>
+		</section>
 
-					<div class="fig-container" data-file="assets/figures/chart.html" data-style="height: 500px; width: 450px"></div>
+		<section>
+			<h2>Architectures</h2>
+			<div class="container">
+				<div class="col"></div>
+				<div class="col">
+					<img width="120%" src="assets/images/task.svg" alt="">
 				</div>
-				<div class='col fragment step-fade-in-then-out' style="padding-top: 1em">
-				
-					<div class="fig-container" data-file="assets/figures/chart.html" data-style="height: 500px; width: 450px"></div>
-				</div>
-				<div class='col fragment step-fade-in-then-out' style="background-color: red;padding-top: 1em">
-				
-					<div class="fig-container" data-file="assets/figures/chart.html" data-style="height: 500px; width: 450px"></div>
-				</div>
-			</div>				
-			<!-- path to the html file with visualization code -->
+			</div>
+
+		</section>
+
+		<section>
+			<h2>Architectures</h2>
+			<img width="120%" src="assets/images/networkoverview.svg" alt="">
+		</section>
+
+		<section>
+			<h2>Understanding CountNet</h2>
+			<h3 style="margin-top: -20px">Convolutional Filters</h3>
+			<img width="120%" src="assets/images/convfilters.svg" alt="">
+		</section>
+
+		<section>
+			<h2>Conclusion</h2>
+			<ul>
+				<li>Proposed two methods for separating unison mixtures</li> 
+				<li>Extended Common Fate for the Music scenario</li>
+				<li>First attempt to model speaker count estimation using DL</li>
+				<li>Listening tests showed performance better already “super-human"</li>
+				<li>Modulations speech</li>
+			</ul>
 		</section>
 
 	<section>

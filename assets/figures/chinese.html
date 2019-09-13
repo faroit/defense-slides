@@ -19,17 +19,18 @@
     </style>
 </head>
 
-<body>
-<canvas id="myChart" width="100%" height="100%"></canvas>
+<body style="margin: 0; padding: 0;">
+<canvas id="myChart" width="100%" height="80px"></canvas>
 <script>
     var ctx = document.getElementById('myChart');
+    Chart.defaults.global.defaultFontSize = 24;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['MEAN', 'VQ', 'SVC', 'SVR', 'RNN', 'CRNN'],
             datasets: [{
                 label: 'Mean Absolute Error',
-                data: [2.73, 2.41, 0.63, 0.56, 0.38, 0.27],
+                data: [2.73, 2.98, 0.77, 0.69, 0.58, 0.36],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.6)',
                     'rgba(54, 162, 235, 0.6)',
@@ -48,6 +49,7 @@
                     }
                 }]
             },
+            devicePixelRatio: 2,
             animation: false,
             legend: {
                 display: false,
@@ -58,6 +60,7 @@
 
         }
     });
+    
 </script>
 </body>
 </html>

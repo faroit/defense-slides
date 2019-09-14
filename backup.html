@@ -136,7 +136,7 @@
 		<h1 style='color:white; font-size: 2.4em'>Source Separation</h1>
 	</section>
 
-	<!-- <section>
+	<section>
 		<h2>Scenario: Unison Separation</h2>
 		<div class="container">
 			<div class="col" style="text-align: center">
@@ -156,7 +156,7 @@
 			</div>
 		</div>
 		</div>
-	</section> -->
+	</section>
 
 	<section data-transition="slide fade-out">
 		<h2>Scenario: Instruments playing Unison</h2>
@@ -535,7 +535,50 @@
 	<section data-state="no-title-footer" data-background="#ED8C01">
 		<h1 style='color:white; font-size: 2.4em'>Evaluation</h1>
 	</section>
-	<!-- ----------------------------------------------------------------------------------------- -->
+
+		<section>
+			<h2>Common Fate Transform (CFT)</h2>
+			<!-- TODO PLAY -->
+			<div style="text-align: center">
+				<img style="margin-left:-20px" width="70%" src="assets/images/stft.png">
+			</div>
+			<p style="text-align:center">
+				$\mathbf{X} \in \mathbb{C}^{352 \times 279}$
+			</p>
+		</section>
+		
+		<section>
+			<h2>Step s: Common Fate Transform (CFT)</h2>
+			<table>
+				<tr>
+					<td>
+						<img src="assets/images/gft.png" width="100%" alt="" />
+						<p style="text-align:center">
+							STFT Grid
+						</p>
+						<p style="text-align:center">
+							$\mathcal{G} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
+						</p>
+					</td>
+					<td>
+						<img src="assets/images/cft.png" width="100%" alt="" />
+						<p style="text-align:center">
+							CFT
+						</p>
+						<p style="text-align:center">
+							$\mathcal{V} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p>
+			</p>
+		</section>
+
+	<section>
+		<img width="120%" src="assets/images/duration.png" alt="">
+	</section>
+
 	<section>
 		<h2>Parameters</h2>
 		<ul>

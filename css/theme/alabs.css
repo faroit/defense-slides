@@ -368,6 +368,22 @@ body {
   color: #ED8C01;
   font-size: 1em; }
 
+.reveal .confirm {
+  color: #ED8C01; }
+
+.reveal .confirm::before {
+  content: "☛ ";
+  color: #ED8C01;
+  font-size: 1em; }
+
+.reveal .man::before {
+  content: "👤 ";
+  font-size: 1em; }
+
+.reveal .machine::before {
+  content: "🤖 ";
+  font-size: 1em; }
+
 .reveal .ref {
   font-size: 14pt; }
 

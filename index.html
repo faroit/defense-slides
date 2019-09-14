@@ -57,7 +57,7 @@
 			</div>
 
 			<div class="col fragment">
-				<h1 style="color:lawngreen; margin-top: 8em">Can you hear out each instrument?</h1>
+				<h1 style="color:lawngreen; margin-top: 6em">Can you hear out each instrument?</h1>
 				<div>
 					<span class="fragment" data-audio-src="assets/audio/jazz_wice.wav">
 						<h3>Example A</h3>
@@ -92,18 +92,18 @@
 		<div style="text-align: center"><img width="650px" src="assets/images/mixture_model.svg" alt=""></div>
 		<p></p>
 		<div class="container">
-			<div class="col" style='text-align: center'>
+			<div class="fragment col" style='border:5px solid#00ADD8; padding: 0.6em; text-align: center'>
 				<h3>Signal Processing</h3>
 				<ul>
 					<li>Can we obtain $\mathbf{s}_j$ from $\mathbf{x}$?</li>
-					<li>Source Separation</li>
+					<li class='confirm'>Source Separation</li>
 				</ul>
 			</div>
-			<div class="col" style='text-align: center'>
+			<div class="fragment col" style='border: 5px solid#F74949; padding: 0.6em; text-align: center'>
 				<h3>Signal Analysis</h3>
 				<ul>
 					<li>Can we find $k$ from $\mathbf{x}$?</li>
-					<li>Count Estimation</li>
+					<li class="confirm">Count Estimation</li>
 				</ul>
 			</div>
 		</div>
@@ -131,68 +131,46 @@
 		</div>
 	</section>
 
-	<section data-background="#ED8C01" data-state="no-title-footer">
+	<section data-background="#00ADD8" data-state="no-title-footer">
 		<h1 style='margin-top: 200px; color: white; font-size: 2.4em'>Source Separation</h1>
 	</section>
 
-	<!-- <section>
-		<h2>Scenario: Unison Separation</h2>
-		<div class="container">
-			<div class="col" style="text-align: center">
-						<h3><img width="64px" src="assets/images/trumpet_icon.png" alt=""></h3>
-						<div style="text-align: center">
-							<img width="100%" src="assets/images/trumpet.svg">
-						</div>
-
-			</div>
-		<div class="col">
-			<div class="col" style="text-align: center">
-				<h3><img width="64px" src="assets/images/cello_icon.png" alt=""></h3>
-				<div style="text-align: center">
-					<img width="100%" src="assets/images/cello.svg">
-				</div>
-			
-			</div>
-		</div>
-		</div>
-	</section> -->
-
 	<section data-transition="slide fade-out">
 		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet</h3>
 		<div style="text-align: center" >
+				<h3><img width="48px" src="assets/images/trumpet_icon.png" alt=""> Trumpet</h3>
 			<img width="80%" src="assets/images/trumpet.svg">
 		</div>
 	</section>
 
 	<section data-transition="fade-in fade-out">
 		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 		<div style="text-align: center">
+				<h3><img width="48px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 			<img width="80%" src="assets/images/cello.svg">
 		</div>
 	</section>
 
 	<section data-transition="fade-in fade-out">
 		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 		<div style="text-align: center">
+				<h3><img width="48px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 				<img width="80%" src="assets/images/cello_ani.svg">
 		</div>
 	</section>
 
 	<section data-transition="fade-in fade-out">
 		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 		<div style="text-align: center">
+				<h3><img width="48px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 			<img width="80%" src="assets/images/cello.svg">
 		</div>
 	</section>
 
 	<section data-transition="fade-in side">
 		<h2>Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet + <img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 		<div style="text-align: center">
+				<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet + <img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 				<img width="80%" src="assets/images/both.svg">
 		</div>
 	</section>
@@ -225,14 +203,14 @@
 			<div class="container">
 				<div class="col">
 					<ul>
-						<li>TF Classification <a class='ref' href="#">Hu 2002</a></li>
-						<li>Source/filter model <a class='ref' href="#">Durrieu 2010</a></li>
-						<li>Spectral Comb Filter <a class='ref' href="#">Cano 2012</a></li>
+						<li>TF Classification</li>
+						<li>Source/filter model</li>
+						<li>Spectral Comb Filter</li>
 					</ul>
 					<br><br>
 					<h3>Proposed</h3>
 					<ul>
-						<li>Use Time Warping <a class='ref' href="#">Stöter 2014</a></li></li>
+						<li>Use Time Warping</li></li>
 						<li>Filter in time domain
 							<ul>
 								<li>less artifacts</li>
@@ -263,8 +241,8 @@
 		<div class="container">
 			<div class="col">
 				<ul>
-					<li>HR-NMF <a class='ref' href="#">Baedau 2011</a></li>
-					<li>Modulation Tensor <a class='ref' href="#">Barker 2013</a></li>
+					<li>HR-NMF</li>
+					<li>Modulation Tensor</li>
 				</ul>
 				<br><br>
 				<h3>Proposed</h3>
@@ -280,58 +258,32 @@
 		</div>
 	</section>
 
-	<section data-background="assets/images/flocks.png" data-state="no-title-footer">
+	<section data-transition="none" data-background="assets/images/flocks.png" data-state="no-title-footer">
 		<p style="background-color:rgba(255, 255, 255, .7) ; padding: 10px; color:black; margin-top: 15em">
-			<strong>Common Fate:</strong> groups common modulation textures to sources.
-		</p>
+			<strong>Common Fate:</strong> groups based on their common motion over time.</p>
 	
 	</section>
 
-	<section data-background-video="assets/video/flocks.mov" data-state="no-title-footer" data-background-video-muted>
+	<section data-transition="none" data-background-video="assets/video/flocks.mov" data-state="no-title-footer" data-background-video-muted>
 		<p style="background-color:rgba(255, 255, 255, .7) ; padding: 10px; color:black; margin-top: 15em">
-			<strong>Common Fate:</strong> groups common modulation textures to sources.
+			<strong>Common Fate:</strong> groups based on their common motion over time.
 		</p>
 
 	</section>
 
-	<section>
-		<h2>Step 1: Short-Time Fourier Transform</h2>
-		<!-- TODO PLAY -->
-		<div style="text-align: center">
-				<img style="margin-left:-20px" width="70%" src="assets/images/stft.png">
-		</div>
-		<p style="text-align:center">
-			$\mathbf{X} \in \mathbb{C}^{352 \times 279}$
-		</p>
-	</section>
+		<section>
+			<h2>Common Fate Transform (CFT)</h2>
+			<!-- TODO PLAY -->
+			<div style="text-align: center">
+				<img class="stretch" src="assets/images/cft_blocks_streamlined.svg">
+			</div>
+			<ul>
+				<li>CFT is computed using complex STFT</li>
+				<li>Easily invertible</li>
+				<li>Results is <strong>modulation texture</strong></li>
+			</ul>
+		</section>
 
-	<section>
-		<h2>Step 2: Common Fate Transform (CFT)</h2>
-		<table>
-			<tr>
-				<td>
-					<img src="assets/images/gft.png" width="100%" alt="" />
-					<p style="text-align:center">
-						STFT Grid
-					</p>
-					<p style="text-align:center">
-						$\mathcal{G} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
-					</p>
-				</td>
-				<td>
-					<img src="assets/images/cft.png" width="100%" alt="" />
-					<p style="text-align:center">
-						CFT
-					</p>
-					<p style="text-align:center">
-						$\mathcal{V} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
-					</p>
-				</td>
-			</tr>
-		</table>
-		<p>
-		</p>
-	</section>
 
 	<section>
 		<h2>In Detail</h2>
@@ -339,22 +291,14 @@
 	</section>
 
 	<section>
-		<h2>Compared to modulation spectrograms... </h2>
-		<ul>
-			<li>CFT is computed using complex STFT $X$
-				<ul>
-					<li>Easily invertible</li>
-					<li>Models phase dependencies between neighbouring STFT entries</li>
-				</ul>
-			</li>
-			<li>Patches span/merge several frequency bins</li>
-			<li>Results in <strong>modulation texture</strong></li>
-		</ul>
-		<p></p>
-		<h3>Common Fate Model</h3>
-		<ul>
-			<li>Using Non-Negative Tensor Factorization</li>
-		</ul>
+		<h2>Common Fate Model (CFM)</h2>
+			<p>
+				<img src="assets/images/cfm_unfolded.svg" width="80%" alt="" />
+				$$\sum\limits_{j=1}^{J} \mathcal{A}_{j}(a,b,f) \circ \mathbf{h}_{j}(t)$$
+			</p>
+			<ul>
+				<li>Based on Non-Negative Tensor Factorization</li>
+			</ul>
 	</section>
 
 	<section>
@@ -372,7 +316,7 @@
 		<h2>Extension music separation</h2>
 		<ul>
 			<li>Common fate transform + Deep Neural Networks</li>
-			<li>Model from Uhlich 2015</li>
+			<li>Model from <a href="#">Uhlich 2015</a></li>
 			<li>Improvements compared to STFT</li>
 		</ul>
 		<p></p>
@@ -388,8 +332,7 @@
 			</ul>
 		</section>
 
-
-	<section>
+	<!-- <section>
 		<h2>Summary</h2>
 		<h3>Processing Methods for Separation</h3>
 		<ul>
@@ -404,10 +347,9 @@
 			</li>
 		</ul>
 	</section>
-
-
-	<section data-background="#ED8C01" data-state="no-title-footer">
-		<h1 style='color:white; font-size: 2.4em'>Source Count Estimation</h1>
+ -->
+	<section data-background="#F74949" data-state="no-title-footer">
+		<h1 style='margin-top: 200px; color:white; font-size: 2.4em'>Source Count Estimation</h1>
 	</section>
 
 	<section>
@@ -423,72 +365,100 @@
 				<img src="assets/images/counting_subitizing.svg" alt="">
 			</div>
 		</div>
+
 	</section>
 
 	<section>
 		<h2>Research Questions</h2>
 		<ul>
-			<li>What are the limitations of subitizing for humans?</li>
-			<li>Can we directly count/subitize audio sources?</li>
-			<li>Can we build a machine to solve these tasks?</li>
+			<li>What are the limitations of subitizing audio sources?</li>
+			<li>Can we build a machine to solve this tasks?</li>
 			<li>Would a machine be subject to the same limitations?</li>
 		</ul>
 	</section>
 
-	<section>
-		<h2>Experiment I</h2>
-		<h3>What is the number of concurrent speakers?</h3>
-			<div class="container">
-				<div class='col' style="padding-top: 1em">
-					<ul>
-						<li>Experiment with English</li>
-						<li>n=40</li>
-						<li>"One-Two-Three-(Four)-Many"</li>
-						<li><a href="https://denumerate.app">https://denumerate.app</a></li>
-					</ul>				
-				</div>
-				<div class='col' style="padding-top: 1em">
-					<img src="assets/images/speech_experiment.svg" alt="">
-				</div>
-			</div>
-	
-		</section>
-
 		<section>
-			<h2>Experiment II</h2>
+			<h2>Study on Music</h2>
 			<h3>What is the number of instruments in music?</h3>
 			<div class="container">
-				<div class='col' style="padding-top: 1em">
+				<div class='col' style="font-size: 28px; padding-top: 1em">
 					<ul>
 						<li>12 music stimuli</li>
-						<li>Unison mostly detected</li>
+						<li>Unison for $k=2$</li>
 						<li>Musicians vs. Non-Musicians</li>
-						<li>First large-scale web-audio based experiment (n=1168)</li>
+						<li>Web based experiment</li>
+						<li>lab ($n=40$) vs web ($n=1168$)</li>
 					</ul>
 				</div>
-				<div class='col' style="padding-top: 1em">
+				<div class='col fragment step-fade-in-then-out'>
+					<h1 style="padding: 1em; font-size: 100px">🔈</h1>
+				</div>
+				<div class='col fragment step-fade-in-then-out' data-audio-src="assets/audio/jazz_wice.wav">
+					<h1 style="padding: 1em; font-size: 100px">🔊</h1>
+				</div>
+				<div class='col fragment step-fade-in-then-out' style="padding-top: 1em">
 					<img src="assets/images/count_instr.svg" alt="">
 				</div>
 			</div>
 		</section>
 
-		<section>
-			<h2>Results I</h2>
-
+	<section>
+		<h2>Study on Speech</h2>
+		<h3>What is the number of concurrent speakers?</h3>
 			<div class="container">
-				<div class="col">
-					<ul style="font-size: 24px">
-						<li class="fragment">Excellent voice activity detection</li>
-						<li class="fragment">Overestimation between $2 < k < 6$</li>
-						<li class="fragment">Error rarely larger than $k=2$</li></k>
-					</ul>
+				<div class='col' style="font-size: 28px; padding-top: 1em">
+					<ul>
+						<li>100 English stimuli (5s)</li>
+						<li>n=40</li>
+						<li>$k_{max}$: blind vs informed</li>
+						<li>Confirm earlier study in japanese</li>
+						<li>Experiment <a href="https://denumerate.app">denumerate.app</a></li>
+					</ul>				
 				</div>
-				<div class="col">
-					<img width="100%" src="assets/images/responses.svg" alt="">			
+				<div class='col fragment' style="padding-top: 1em">
+					<img src="assets/images/speech_experiment.svg" alt="">
 				</div>
-				
 			</div>
-		</section>
+			<p class="fragment" style="font-size: 24px; width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
+				Music and Speech: "One-Two-Three-Many"
+			</p>
+	</section>
+
+	<section>
+		<h2>Research Questions</h2>
+		<ul>
+			<li style="opacity: 0.5">What are the limitations of subitizing audio sources?</li>
+			<li class='confirm'>Can we build a machine to solve this tasks?</li>
+			<li>Would a machine be subject to the same limitations?</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Task definition</h2>
+		<img src="assets/images/task.svg" alt="">
+		<p class="fragment" style="font-size: 28px; width: 60%; margin: auto; background-color: orange; padding: 10px; color:white">
+			$k$ = Maximum number of concurrent speaker
+		</p>
+	</section>
+
+	<section>
+		<h2>Data-Driven Count Estimation</h2>
+		<div style="text-align: center">
+			<img width="70%" src="assets/images/train.svg" alt="">
+		</div>
+		<ul>
+			<li>
+				Synthetically overlapped mixtures using LibriSpeech
+			</li>
+			<li>
+				20.020 training items (55h) ground truth labels
+				<ul>
+					<li>1820 samples for $[0 ... 10]$ speakers</li>
+					<li>$k=0$ from TUT Acoustic Scenes dataset</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
 
 		<section>
 			<h2>Input and Output</h2>
@@ -513,7 +483,15 @@
 		</section>
 
 		<section>
-			<h2>Superhuman</h2>
+			<h2>Model selection</h2>
+			<img src="assets/images/countnet_parameters.svg" alt="">
+			<p class="fragment" style="width: 70%; margin: auto; background-color: orange; padding: 10px; color:white">
+				CountNet = STFT > CRNN > Classification
+			</p>
+		</section>
+
+		<section>
+			<h2>Results on Test set</h2>
 			<div class="container">
 				<div class="col">
 					<ul style="font-size: 24px">
@@ -524,20 +502,19 @@
 					</ul>
 				</div>
 				<div class="col">
-					<img width="100%" src="assets/images/superhuman.svg" alt="">
+					<img width="100%" src="assets/images/responses.svg" alt="">
 				</div>
+		
 			</div>
 		</section>
-
 
 		<section>
 			<h2>Complexity</h2>
 			<div class="container">
 				<div class="col">
 					<ul style="font-size: 24px">
-						<li class="fragment">Excellent voice activity detection</li>
-						<li class="fragment">Overestimation between $2 < k < 6$</li> <li class="fragment">Error rarely larger
-								than $k=2$</li>
+						<li class="fragment">CRNN: Best Performance/Complexity</li>
+						<li class="fragment">F-CRNN: Suitable for mobile applications</li>
 						</k>
 					</ul>
 				</div>
@@ -548,7 +525,7 @@
 		</section>
 
 		<section>
-			<h2>Results</h2>
+			<h2>Evaluation of CountNet</h2>
 
 			<div class="container">
 				<div class='col'>
@@ -615,23 +592,29 @@
 		</section>
 
 		<section>
-			<h2>Model selection</h2>
-			<img src="assets/images/countnet_parameters.svg" alt="">
-					<p class="fragment" style="width: 70%; margin: auto; background-color: orange; padding: 10px; color:white">
-						CountNet = STFT > CRNN > Classification
-					</p>
-
+			<h2>Research Questions</h2>
+			<ul>
+				<li style="opacity: 0.5">What are the limitations of subitizing audio sources?</li>
+				<li style="opacity: 0.5">Can we build a machine to solve this tasks?</li>
+				<li class='confirm'>Would a machine be subject to the same limitations?</li>
+			</ul>
 		</section>
 
 		<section>
-			<h2>Architectures</h2>
+			<h2>CountNet vs. Human</h2>
 			<div class="container">
-				<div class="col"></div>
 				<div class="col">
-					<img width="120%" src="assets/images/task.svg" alt="">
+					<ul style="font-size: 36px">
+						<li class="man fragment">Underestimation</li>
+						<li class="machine fragment">Overestimation </li>
+						<li class="man fragment">One-Two-Three-Many</li>
+						<li class="machine fragment">One-...-$k_{max}$</li>
+					</ul>
+				</div>
+				<div class="col">
+					<img width="100%" src="assets/images/superhuman.svg" alt="">
 				</div>
 			</div>
-
 		</section>
 
 		<section data-background="assets/images/blackbox.jpg" data-state="no-title-footer">
@@ -661,7 +644,7 @@
 
 		<section>
 			<h2>Understanding CountNet</h2>
-			<h3 style="margin-top: -20px">Results</h3>
+
 			<div class="container">
 				<div class="col">
 					<ul>
@@ -669,9 +652,9 @@
 						<li>Select k=6 items (balanced)</li>
 						<li>Errors only <emph>underestimation</emph></li>
 						<li>Significant effect of speaking rate</li>
-						<li>> Speaking very slow may result in understimation</li>
+						<li class="confirm">Speaking very slow may result in understimation</li>
 					</ul>
-				<p style="font-size: 24px; width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
+				<p class="fragment" style="font-size: 24px; width: 50%; margin: auto; background-color: orange; margin-top: 20px; padding: 10px; color:white">
 					CountNet used speech modulations
 				</p>
 				</div>
@@ -686,11 +669,27 @@
 		<section>
 			<h2>Conclusion</h2>
 			<ul>
-				<li>Proposed two methods for separating unison mixtures</li> 
-				<li>Extended Common Fate for the Music scenario</li>
-				<li>First attempt to model speaker count estimation using DL</li>
-				<li>Listening tests showed performance better already “super-human"</li>
-				<li>Modulations speech</li>
+				<li class="fragment">Focus on overlapping part instead of non-overlapping part</li>
+				<li class="fragment">Proposed methods for separating unison mixtures</li> 
+				<li class="fragment">Extended Common Fate for the Music scenario</li>
+				<li class="fragment">Speaker count estimation using DL</li>
+				<li class="fragment">Listening tests showed performance better than human</li>
+				<li class="confirm fragment">Modulations play an important role audio tasks</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Outlook</h2>
+			<ul>
+				<li>Paradigm shift for signal processing</li>
+				<li>DNN models for
+					<ul>
+						<li>Common fate representations</li>
+						<li>Long term structure for slow modulations</li>
+					</ul>
+				</li>
+				<li>Research on count estimation</li>
+				<li>Extrapolation</li>
 			</ul>
 		</section>
 
@@ -698,18 +697,15 @@
 		<h2>Further Contributions</h2>
 		<div class="container">
 			<div class="col" style="flex: 2">
-				<h3>Data</h3>
+				<h3>Public Domain Data</h3>
 				<ul>
-					<li>Unison Dataset <a href="https://doi.org/10.5281/zenodo.1467921"><img
-								src="https://zenodo.org/badge/DOI/10.5281/zenodo.1467921.svg" alt="DOI"></a>
-					</li>
-					<li>Cello Dataset <a href="https://doi.org/10.5281/zenodo.1560651"><img
-								src="https://zenodo.org/badge/DOI/10.5281/zenodo.1560651.svg" alt="DOI"></a></li>
+					<li>Unison Dataset</li>
+					<li>Cello Dataset</li>
 					<li>DSD100, MUSDB18 Dataset</li>
 				</ul>
-				<h3>Software Packages</h3>
+				<h3>Reproducibility</h3>
 				<ul>
-					<li><a href="http://github.com/aliutkus/commonfate">commonfate</a></li>
+					<li>commonfate</li>
 					<li>musdb</li>
 					<li>museval</li>
 				</ul>
@@ -726,8 +722,13 @@
 			</div>
 		</div>
 	</section>
+
 	<section>
 		<img width="120%" src="assets/images/trends.svg" alt="">
+	</section>
+
+	<section>
+		<img width="120%" src="assets/images/duration.png" alt="">
 	</section>
 
 	</div>

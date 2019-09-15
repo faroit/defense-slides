@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1100 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-300,-70)">
+        <g transform="matrix(1.59398,0,0,4.02476,-330.218,-71.4856)">
+            <rect x="533.394" y="60" width="426.606" height="124.231" style="fill:rgb(235,235,235);stroke:black;stroke-width:0.98px;"/>
+        </g>
+        <g>
+            <g transform="matrix(1,0,0,1,603.004,554)">
+                <text x="0px" y="0px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:72px;">o</text>
+            </g>
+            <g transform="matrix(1,0,0,1,643.612,554)">
+                <text x="0px" y="0px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:72px;">v<tspan x="34.704px " y="0px ">e</tspan>rlap in time</text>
+            </g>
+        </g>
+        <g>
+            <g transform="matrix(1,0,0,1,614.74,638)">
+                <text x="0px" y="0px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:72px;">and fr</text>
+            </g>
+            <g transform="matrix(1,0,0,1,809.428,638)">
+                <text x="0px" y="0px" style="font-family:'FiraSans-Regular', 'Fira Sans', sans-serif;font-size:72px;">equency</text>
+            </g>
+        </g>
+    </g>
+    <g id="path2235" transform="matrix(1,0,0,1,-1.819,-201.553)">
+        <path d="M300,400.005C309.993,385.784 319.986,371.562 331.378,371.562M362.728,400.006C359.061,394.787 355.394,389.569 351.658,385.053C345.213,377.262 338.561,371.562 331.35,371.562M362.722,399.999C372.715,414.221 382.708,428.443 394.1,428.443M425.45,399.998C415.457,414.22 405.464,428.442 394.072,428.442M425.448,400.001C435.441,385.779 445.434,371.557 456.826,371.557M488.176,400.001C478.182,385.78 468.189,371.558 456.797,371.558M488.174,399.999C498.167,414.221 508.16,428.443 519.552,428.443M550.902,399.999C540.909,414.221 530.916,428.443 519.524,428.443M550.9,400.001C560.893,385.779 570.886,371.557 582.278,371.557M613.628,400.002C603.635,385.78 593.642,371.558 582.25,371.558M613.622,399.995C623.615,414.217 633.608,428.439 645,428.439M676.35,399.994C666.357,414.216 656.363,428.438 644.971,428.438M676.348,399.997C686.341,385.775 696.334,371.553 707.726,371.553M739.075,399.997C729.082,385.775 719.089,371.554 707.697,371.554M739.091,400.003C749.084,414.225 759.077,428.447 770.469,428.447M801.819,400.003C799.085,403.893 796.351,407.784 793.589,411.383C786.254,420.942 778.716,428.447 770.44,428.447" style="fill:none;stroke:rgb(57,108,255);stroke-width:6.39px;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-1.819,-201.553)">
+        <path d="M300.339,399.994L801.819,399.994" style="fill:none;stroke:rgb(214,0,0);stroke-width:8px;"/>
+    </g>
+</svg>

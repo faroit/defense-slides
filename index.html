@@ -38,16 +38,16 @@
 			September 19th, 2019
 		</p>
 		<p>
-			<div class='logos'>
-				<img src="css/theme/alabs/FAU_bw.svg" id="FAU" class="logo" alt="">
-				<img src="css/theme/alabs/IIS_bw.svg" id="IIS" class="logo" alt="">
-			</div>
+		<div class='logos'>
+			<img src="css/theme/alabs/FAU_bw.svg" id="FAU" class="logo" alt="">
+			<img src="css/theme/alabs/IIS_bw.svg" id="IIS" class="logo" alt="">
+		</div>
 	</section>
 
 	<section data-state="no-title-footer no-progressbar" data-background="black" data-state="no-title-footer" data-fullscreen>
 		<div class="container">
 			<div class="col fragment">
-				<h1 style="color:#ED8C01">How many speakers can you hear?</h1>
+				<h1 style="color:#ED8C01">How many speakers are in the room?</h1>
 				<div>
 					<span class="fragment" data-audio-src="assets/audio/two_speaker_faded.wav"><h3>Example A</h3></span>
 				</div>
@@ -57,7 +57,7 @@
 			</div>
 
 			<div class="col fragment">
-				<h1 style="color:lawngreen; margin-top: 6em">Can you hear out each instrument?</h1>
+				<h1 style="color:lawngreen; margin-top: 6em">Can you focus on the individual instruments?</h1>
 				<div>
 					<span class="fragment" data-audio-src="assets/audio/jazz_wice.wav">
 						<h3>Example A</h3>
@@ -70,18 +70,30 @@
 				</div>
 			</div>
 		</div>
+		<aside class="notes">
+			Good afternoon, it is an honor to welcome you to my defense especially...
+		</aside>
 	</section>
 
 	<section>
 		<h2>Overlap in Time and Frequency</h2>
 		<div class="container">
 			<div class="col">
+				<img class="fragment step-fade-in-then-out" src="assets/images/overlap_00.svg"
+					alt="">
 				<img data-audio-src="assets/audio/00.wav" class="fragment fade-in-then-semi-out" src="assets/images/overlap_00.svg" alt=""></br>
+
+				<img class="fragment step-fade-in-then-out" src="assets/images/overlap_01.svg" alt="">
 				<img class="fragment fade-in-then-semi-out" data-audio-src="assets/audio/01.wav" src="assets/images/overlap_01.svg" alt="">
 			</div>
 			<div class="col">
+				<img class="fragment step-fade-in-then-out" src="assets/images/overlap_10.svg" alt="">
 				<img data-audio-src="assets/audio/10.wav" class="fragment fade-in-then-semi-out" src="assets/images/overlap_10.svg" alt=""></br>
-				<img data-audio-src="assets/audio/11.wav" class="fragment fade-in-then-semi-out" src="assets/images/overlap_11.svg" alt="">
+
+				<img class="fragment step-fade-in-then-out" src="assets/images/overlap_11.svg" alt="">
+				<img data-audio-src="assets/audio/11.wav" class="fragment fade-in-then-semi-out step-fade-in-then-out" src="assets/images/overlap_11.svg" alt="">
+				<img class="fragment fade-in-then-semi-out step-fade-in-then-out" src="assets/images/overlap_11o.svg"
+					alt="">
 			</div>
 		</div>
 	</section>
@@ -92,7 +104,7 @@
 		<div style="text-align: center"><img width="650px" src="assets/images/mixture_model.svg" alt=""></div>
 		<p></p>
 		<div class="container">
-			<div class="fragment col" style='border:5px solid#00ADD8; padding: 0.6em; text-align: center'>
+			<div class="fragment col" style='margin-right: 2px; border:5px solid#00ADD8; padding: 0.6em; text-align: center'>
 				<h3>Signal Processing</h3>
 				<ul>
 					<li>Can we obtain $\mathbf{s}_j$ from $\mathbf{x}$?</li>
@@ -139,7 +151,8 @@
 		<h2>Scenario: Instruments playing Unison</h2>
 		<div style="text-align: center" >
 				<h3><img width="48px" src="assets/images/trumpet_icon.png" alt=""> Trumpet</h3>
-			<img width="80%" src="assets/images/trumpet.svg">
+			<img class="fragment step-fade-in-then-out" width="80%" src="assets/images/trumpet.svg">
+			<img class="fragment step-fade-in-then-out" width="80%" src="assets/images/trumpet_o.svg">
 		</div>
 	</section>
 
@@ -170,16 +183,17 @@
 	<section data-transition="fade-in side">
 		<h2>Instruments playing Unison</h2>
 		<div style="text-align: center">
-				<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet + <img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
+				<h3><img width="48px" src="assets/images/trumpet_icon.png" alt=""> Trumpet + <img width="48px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
 				<img width="80%" src="assets/images/both.svg">
 		</div>
 	</section>
 	
 	<section>
-		<h2>Research Question</h2>
+		<h2>Why is it difficult?</h2>
 		<ul>
 			<li>Unison has extreme overlap</li>
-			<li>Separation Sandbox</li>
+			<li>Time-Frequency representations (e.g. STFT) are not sufficient</li>
+			<li>Toy example to study modulations</li>
 		</ul>
 	</br>
 	</br>
@@ -191,40 +205,48 @@
 
 		<h3>Contributions</h3>
 		<ul>
-			<li>Known/Informed Modulation</li>
+			<li>Known Modulation</li>
 			<li>Unknown Modulation</li>
 		</ul>
 	</section>
 
 	<section>
-			<h2>Known Modulation</h2>
-			<h3>Modeling Instationary Signals</h3>
-	
+			<h2>Known Modulation</h2>	
 			<div class="container">
 				<div class="col">
+					<h3>Modeling Instationary Signals</h3>
 					<ul>
-						<li>TF Classification</li>
-						<li>Source/filter model</li>
 						<li>Spectral Comb Filter</li>
+						<li>Informed non-negative matrix factorization (NMF)</li>
+						<li>...</li>
 					</ul>
-					<br><br>
+				</div>
+				<div class="col" style="vertical-align: top">
+					<img width="100%" src="assets/images/ReviewPaper_ Figure2_new.svg" alt="">
+				</div>
+			</div>
+			<p></p>
+			<div class="container">
+				<div class="col">
 					<h3>Proposed</h3>
 					<ul>
-						<li>Use Time Warping</li></li>
+						<li>Use Time Warping</li>
+						</li>
 						<li>Filter in time domain
 							<ul>
 								<li>less artifacts</li>
 								<li>required: accurate F0</li>
 							</ul>
 						</li>
-						
+			
 					</ul>
 				</div>
 				<div class="col">
-					<img style="float:right" width="100%" src="assets/images/ReviewPaper_ Figure2.svg" alt="">
-					<br>
+					<img width="100%" src="assets/images/ReviewPaper_ Figure2_new2.svg" alt="">
+			
 				</div>
 			</div>
+
 	</section>
 
 	<section>
@@ -241,8 +263,9 @@
 		<div class="container">
 			<div class="col">
 				<ul>
+					<li>Source/filter model</li>
 					<li>HR-NMF</li>
-					<li>Modulation Tensor</li>
+					<li>(AM) Modulation Tensor</li>
 				</ul>
 				<br><br>
 				<h3>Proposed</h3>
@@ -251,10 +274,10 @@
 					<li>Suitable Separation Model</li>
 				</ul>
 			</div>
-			<div class="col">
+			<!-- <div class="col">
 				<img width="60%" src="assets/images/ReviewPaper_ Figure3.svg" alt="">
 				<br>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -281,6 +304,7 @@
 				<li>CFT is computed using complex STFT</li>
 				<li>Easily invertible</li>
 				<li>Results is <strong>modulation texture</strong></li>
+				<li>Separation using Non-Negative Tensor Factorization</li>
 			</ul>
 		</section>
 
@@ -290,7 +314,7 @@
 		<img class="stretch" src="assets/images/gridplot.svg">
 	</section>
 
-	<section>
+	<!-- <section>
 		<h2>Common Fate Model (CFM)</h2>
 			<p>
 				<img src="assets/images/cfm_unfolded.svg" width="80%" alt="" />
@@ -299,7 +323,7 @@
 			<ul>
 				<li>Based on Non-Negative Tensor Factorization</li>
 			</ul>
-	</section>
+	</section> -->
 
 	<section>
 		<section>
@@ -348,8 +372,8 @@
 		</ul>
 	</section>
  -->
-	<section data-background="#F74949" data-state="no-title-footer">
-		<h1 style='margin-top: 200px; color:white; font-size: 2.4em'>Source Count Estimation</h1>
+	<section data-background="assets/images/devons_soft.jpg"  data-state="no-title-footer">
+		<h1 style='margin-top: 200px; background-color: white; color: orange; font-size: 2.4em'>Source Count Estimation</h1>
 	</section>
 
 	<section>
@@ -404,7 +428,7 @@
 
 	<section>
 		<h2>Study on Speech</h2>
-		<h3>What is the number of concurrent speakers?</h3>
+		<h3>"What is the maximum number of concurrent speakers?"</h3>
 			<div class="container">
 				<div class='col' style="font-size: 28px; padding-top: 1em">
 					<ul>
@@ -721,14 +745,6 @@
 	
 			</div>
 		</div>
-	</section>
-
-	<section>
-		<img width="120%" src="assets/images/trends.svg" alt="">
-	</section>
-
-	<section>
-		<img width="120%" src="assets/images/duration.png" alt="">
 	</section>
 
 	</div>

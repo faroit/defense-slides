@@ -72,6 +72,7 @@
 		</div>
 		<aside class="notes">
 			Good afternoon, it is an honor to welcome you to my defense especially...
+			I would like to thank all members of the jury for coming today for my defense.
 		</aside>
 	</section>
 
@@ -151,7 +152,7 @@
 		<h2>Scenario: Instruments playing Unison</h2>
 		<div style="text-align: center" >
 				<h3><img width="48px" src="assets/images/trumpet_icon.png" alt=""> Trumpet</h3>
-			<img class="fragment step-fade-in-then-out" width="80%" src="assets/images/trumpet.svg">
+			<img data-audio-src="assets/audio/trumpet.wav" class="fragment step-fade-in-then-out" width="80%" src="assets/images/trumpet.svg">
 			<img class="fragment step-fade-in-then-out" width="80%" src="assets/images/trumpet_o.svg">
 		</div>
 	</section>
@@ -160,7 +161,7 @@
 		<h2>Scenario: Instruments playing Unison</h2>
 		<div style="text-align: center">
 				<h3><img width="48px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
-			<img width="80%" src="assets/images/cello.svg">
+			<img class="fragment" data-audio-src="assets/audio/cellohigh.wav" width="80%" src="assets/images/cello.svg">
 		</div>
 	</section>
 
@@ -184,7 +185,7 @@
 		<h2>Instruments playing Unison</h2>
 		<div style="text-align: center">
 				<h3><img width="48px" src="assets/images/trumpet_icon.png" alt=""> Trumpet + <img width="48px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
-				<img width="80%" src="assets/images/both.svg">
+				<img class="fragment" data-audio-src="assets/audio/11.wav" width="80%" src="assets/images/both.svg">
 		</div>
 	</section>
 	
@@ -192,13 +193,13 @@
 		<h2>Why is it difficult?</h2>
 		<ul>
 			<li>Unison has extreme overlap</li>
-			<li>Time-Frequency representations (e.g. STFT) are not sufficient</li>
 			<li>Toy example to study modulations</li>
+			<li>Time-Frequency representations (e.g. STFT) are not sufficient</li>
 		</ul>
 	</br>
 	</br>
-		<p style="width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
-			Can we utilize modulations for separation of unison mixtures?
+		<p style="width: 60%; margin: auto; background-color: orange; padding: 10px; color:white">
+			<span style="font-size:64px; float: left">💡</span>Can we utilize modulations for separation of unison mixtures?
 		</p>
 			</br>
 			</br>
@@ -212,13 +213,12 @@
 
 	<section>
 			<h2>Known Modulation</h2>	
-			<div class="container">
+			<div class="container fragment">
 				<div class="col">
-					<h3>Modeling Instationary Signals</h3>
+					<h3>$F_{0}$ informed separation</h3>
 					<ul>
 						<li>Spectral Comb Filter</li>
 						<li>Informed non-negative matrix factorization (NMF)</li>
-						<li>...</li>
 					</ul>
 				</div>
 				<div class="col" style="vertical-align: top">
@@ -226,9 +226,9 @@
 				</div>
 			</div>
 			<p></p>
-			<div class="container">
+			<div class="container fragment">
 				<div class="col">
-					<h3>Proposed</h3>
+					<h3>Contribution</h3>
 					<ul>
 						<li>Use Time Warping</li>
 						</li>
@@ -258,26 +258,26 @@
 
 	<section>
 		<h2>Unknown Modulation</h2>
-		<h3>Modeling Instationary Signals</h3>
-	
-		<div class="container">
-			<div class="col">
+		
+		<div class="container fragment">
+			<div>
+				<h3>Joint modulation estimation and separation</h3>
 				<ul>
 					<li>Source/filter model</li>
-					<li>HR-NMF</li>
-					<li>(AM) Modulation Tensor</li>
+					<li>HR-NMF (high resolution NMF)</li>
+					<li>Ampltide modulation spectrogram factorization</li>
 				</ul>
-				<br><br>
-				<h3>Proposed</h3>
+			</div>
+		</div>
+		<p></p>
+		<div class="container fragment">
+			<div>
+				<h3>Contributions</h3>
 				<ul>
 					<li>Novel Representation</li>
 					<li>Suitable Separation Model</li>
 				</ul>
 			</div>
-			<!-- <div class="col">
-				<img width="60%" src="assets/images/ReviewPaper_ Figure3.svg" alt="">
-				<br>
-			</div> -->
 		</div>
 	</section>
 
@@ -301,18 +301,21 @@
 				<img class="stretch" src="assets/images/cft_blocks_streamlined.svg">
 			</div>
 			<ul>
-				<li>CFT is computed using complex STFT</li>
-				<li>Easily invertible</li>
-				<li>Results is <strong>modulation texture</strong></li>
+				<li>CFT is computed using complex STFT
+					<ul>
+						<li>Easily invertible</li>
+					</ul>
+				</li>
+				<li>Adequate for 2D-stationary <strong>texture</strong></li>
 				<li>Separation using Non-Negative Tensor Factorization</li>
 			</ul>
 		</section>
 
 
-	<section>
+	<!-- <section>
 		<h2>In Detail</h2>
 		<img class="stretch" src="assets/images/gridplot.svg">
-	</section>
+	</section> -->
 
 	<!-- <section>
 		<h2>Common Fate Model (CFM)</h2>
@@ -337,24 +340,25 @@
 	</section>
 
 	<section>
-		<h2>Extension music separation</h2>
+		<h2>Extending CFT for music separation</h2>
 		<ul>
 			<li>Common fate transform + Deep Neural Networks</li>
 			<li>Model from <a href="#">Uhlich 2015</a></li>
 			<li>Improvements compared to STFT</li>
+			<li>Submitted to SiSEC 2016</li>
 		</ul>
 		<p></p>
 		<img width="80%" src="assets/images/uhlich_dnn.svg" alt="">
 	</section>
 
-		<section>
+		<!-- <section>
 			<h2>Extension for real world data</h2>
 			<h3>Results SiSEC 2016</h3>
 			<img src="assets/images/sisec17.svg" alt="">
 			<ul>
 				<li><a href="https://www.sisec17.audiolabs-erlangen.de/#/listen/21/STO1">DEMO</a></li>
 			</ul>
-		</section>
+		</section> -->
 
 	<!-- <section>
 		<h2>Summary</h2>
@@ -396,7 +400,7 @@
 		<h2>Research Questions</h2>
 		<ul>
 			<li>What are the limitations of subitizing audio sources?</li>
-			<li>Can we build a machine to solve this tasks?</li>
+			<li>Can we build a machine to address count estimation?</li>
 			<li>Would a machine be subject to the same limitations?</li>
 		</ul>
 	</section>
@@ -452,7 +456,7 @@
 		<h2>Research Questions</h2>
 		<ul>
 			<li style="opacity: 0.5">What are the limitations of subitizing audio sources?</li>
-			<li class='confirm'>Can we build a machine to solve this tasks?</li>
+			<li class='confirm'>Can we build a machine to address count estimation?</li>
 			<li>Would a machine be subject to the same limitations?</li>
 		</ul>
 	</section>
@@ -487,6 +491,10 @@
 		<section>
 			<h2>Input and Output</h2>
 			<img width="100%" src="assets/images/io.svg" alt="">
+			<p class="fragment" style="width: 70%; margin: auto; background-color: orange; padding: 10px; color:white">
+				CountNet = STFT > CRNN > Classification
+			</p>
+
 		</section>
 
 		<section>
@@ -506,13 +514,10 @@
 			</section>
 		</section>
 
-		<section>
+		<!-- <section>
 			<h2>Model selection</h2>
 			<img src="assets/images/countnet_parameters.svg" alt="">
-			<p class="fragment" style="width: 70%; margin: auto; background-color: orange; padding: 10px; color:white">
-				CountNet = STFT > CRNN > Classification
-			</p>
-		</section>
+		</section> -->
 
 		<section>
 			<h2>Results on Test set</h2>
@@ -562,7 +567,7 @@
 				<div class='col fragment step-fade-in-then-out'>
 				<ul style='font-size: 0.8em'>
 					<li>MEAN: $k=5$</li>
-					<li>VQ: K-Means of ${MFCC}[7]$</li>
+					<li>M7: K-Means of ${MFCC}[7]$</li>
 					<li>SVC: SVM Classification ${MFCC}_{20}$</li>
 					<li>SVR: SVM Regression ${MFCC}_{20}$</li>
 					<li>RNN: DNN Recurrent LSTM on STFT</li>
@@ -570,8 +575,8 @@
 				</ul>
 				</div>
 
-				<div class='col fragment step-fade-in-then-out'>
-					<div class="fig-container" data-file="assets/figures/timit.html" data-style="height: 400px; width: 450px"></div>
+				<!-- <div class='col fragment step-fade-in-then-out'>
+					<div class="fig-container" data-file="assets/figures/wow.html" data-style="height: 400px; width: 450px"></div>
 					<h4>Train: LibriSpeech</br>
 						Test: TIMIT
 					</h4>
@@ -604,10 +609,21 @@
 					<h4>Train: LibriSpeech Reverberated</br>
 						Test: LibriSpeech Reverberated
 					</h4>
-				</div>
+				</div> -->
 			</div>				
 		</section>
 
+				<section>
+					<h2>Evaluation of CountNet</h2>
+				
+					<div class="container" style="text-align: center">
+						<div class='col'>
+							<div class="fig-container" data-file="assets/figures/wow.html"
+								data-style="height: 480px; width: 450px"></div>
+				
+						</div>
+					</div>
+				</section>
 		<section>
 			<h2>CountNet Demo</h2>
 			<video controls loop>
@@ -619,7 +635,7 @@
 			<h2>Research Questions</h2>
 			<ul>
 				<li style="opacity: 0.5">What are the limitations of subitizing audio sources?</li>
-				<li style="opacity: 0.5">Can we build a machine to solve this tasks?</li>
+				<li style="opacity: 0.5">Can we build a machine to address count estimation?</li>
 				<li class='confirm'>Would a machine be subject to the same limitations?</li>
 			</ul>
 		</section>
@@ -702,7 +718,7 @@
 			</ul>
 		</section>
 
-		<section>
+		<!-- <section>
 			<h2>Outlook</h2>
 			<ul>
 				<li>Paradigm shift for AI
@@ -727,7 +743,7 @@
 				</li>
 				
 			</ul>
-		</section>
+		</section> -->
 
 	<section>
 		<h2>Further Contributions</h2>
@@ -770,15 +786,6 @@
 	<script src="js/reveal.js"></script>
 
 	<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		// var wavesurfer = WaveSurfer.create({
-		// 		container: '#waveform',
-		// 		waveColor: 'grey',
-		// 		progressColor: 'orange'
-		// 	});
-		// 	wavesurfer.load('assets/audio/fm_sine.wav');
 
 		Reveal.initialize({
 			math: {

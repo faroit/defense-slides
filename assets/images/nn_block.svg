@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 990 1823" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-4600.28,-193.34)">
+        <g transform="matrix(2.05267,0,0,0.845035,4030.03,179.889)">
+            <path d="M519.685,188.976L519.685,2027.01" style="fill:none;stroke:black;stroke-width:5.31px;"/>
+        </g>
+        <g transform="matrix(2.05267,0,0,11.4693,4117.5,-2152.98)">
+            <rect x="236.22" y="236.22" width="472.441" height="94.488" style="fill:white;stroke:black;stroke-width:0.51px;"/>
+        </g>
+        <g transform="matrix(2.05267,0,0,2.11606,4117.5,1313.98)">
+            <rect x="236.22" y="236.22" width="472.441" height="94.488" style="fill:white;stroke:black;stroke-width:2px;"/>
+        </g>
+        <g transform="matrix(2.05267,0,0,2.19133,1379.02,1343.53)">
+            <g transform="matrix(1,0,0,1,1673.08,273.396)">
+                <text x="0px" y="0px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:45.833px;">Output La</text>
+            </g>
+        </g>
+        <g transform="matrix(2.05267,0,0,2.19133,1379.02,1343.53)">
+            <g transform="matrix(1,0,0,1,1878.55,273.396)">
+                <text x="0px" y="0px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:45.833px;">y<tspan x="22.504px " y="0px ">e</tspan>r</text>
+            </g>
+        </g>
+        <g transform="matrix(2.05267,0,0,2.18995,1499.15,557.59)">
+            <g transform="matrix(0.456631,0,0,0.456631,-574.458,-246.376)">
+                <text x="4837.23px" y="1130.34px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:100.372px;">Ar<tspan x="4934.22px " y="1130.34px ">c</tspan>hit<tspan x="5105.39px " y="1130.34px ">e</tspan>ctur<tspan x="5342.8px " y="1130.34px ">e</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(2.05267,0,0,2.18995,4133.41,-321.89)">
+            <rect x="236.22" y="236.22" width="472.441" height="94.488" style="fill:white;stroke:black;stroke-width:1.96px;"/>
+        </g>
+        <g transform="matrix(2.05267,0,0,2.18995,4985.15,329.192)">
+            <text x="0px" y="0px" style="font-family:'FiraSans-Medium', 'Fira Sans', sans-serif;font-weight:500;font-size:45.833px;">Input</text>
+        </g>
+    </g>
+</svg>

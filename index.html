@@ -414,7 +414,6 @@
 						<li>12 music stimuli</li>
 						<li>Unison for $k=2$</li>
 						<li>Musicians vs. Non-Musicians</li>
-						<li>Web based experiment</li>
 						<li>lab ($n=40$) vs web ($n=1168$)</li>
 					</ul>
 				</div>
@@ -438,7 +437,8 @@
 					<ul>
 						<li>100 English stimuli (5s)</li>
 						<li>n=40</li>
-						<li>$k_{max}$: blind vs informed</li>
+						<li>$k_{max}$ unknown (blind)</li>
+						<li>$k_{max}$ known (blind)</li>
 						<li>Confirm earlier study in japanese</li>
 						<li>Experiment <a href="https://denumerate.app">denumerate.app</a></li>
 					</ul>				
@@ -472,7 +472,7 @@
 	<section>
 		<h2>Data-Driven Count Estimation</h2>
 		<div style="text-align: center">
-			<img width="70%" src="assets/images/train.svg" alt="">
+			<img width="50%" src="assets/images/train.svg" alt="">
 		</div>
 		<ul>
 			<li>
@@ -485,39 +485,45 @@
 					<li>$k=0$ from TUT Acoustic Scenes dataset</li>
 				</ul>
 			</li>
+			<li>Evaluation metric: mean absolute count error</li>
 		</ul>
 	</section>
 
-		<section>
-			<h2>Input and Output</h2>
-			<img width="100%" src="assets/images/io.svg" alt="">
-			<p class="fragment" style="width: 70%; margin: auto; background-color: orange; padding: 10px; color:white">
-				CountNet = STFT > CRNN > Classification
-			</p>
-
-		</section>
-
-		<section>
-			<section>
-				<h2>Architectures</h2>
-				<img width="120%" src="assets/images/architectures.svg" alt="">
+	<section>
+		<h2>Parameters</h2>
+		<img src="assets/images/params0.svg" class="fragment step-fade-in-then-out" width="100%" class="" alt="">
+		<img src="assets/images/params1.svg" class="fragment step-fade-in-then-out" width="100%" class="" alt="">
+		<img src="assets/images/params2.svg" class="fragment step-fade-in-then-out" width="100%" class="" alt="">
+		<img src="assets/images/params3.svg" class="fragment step-fade-in-then-out" width="100%" class="" alt="">
 		
-			</section>
-			<section>
-				<h2>Architectures</h2>
-				<img width="120%" src="assets/images/networkoverview.svg" alt="">
-		
-			</section>
-			<section>
-				<h2>CRNN</h2>
-				<img width="120%" src="assets/images/nn.svg" alt="">
-			</section>
-		</section>
+	</section>
+
 
 		<!-- <section>
 			<h2>Model selection</h2>
 			<img src="assets/images/countnet_parameters.svg" alt="">
 		</section> -->
+
+			<section>
+				<h2>Complexity</h2>
+				<div class="container">
+					<div class="col">
+						<img width="100%" src="assets/images/complexity.svg" alt="">
+					</div>
+					<div class="col">
+						<ul style="font-size: 24px">
+							<li class="fragment">CRNN: Best tradeoff Performance/Complexity</li>
+							<li class="fragment">F-CRNN: Suitable for mobile applications</li>
+							</k>
+						</ul>
+					</div>
+				</div>
+						<p class="fragment"
+							style="font-size: 28px; width: 100%; margin: auto; background-color: orange; margin-top: 10px; padding: 10px; color:white">
+							<strong>CountNet</strong>: STFT → CRNN → Classification
+						</p>
+
+			</section>
 
 		<section>
 			<h2>Results on Test set</h2>
@@ -525,8 +531,7 @@
 				<div class="col">
 					<ul style="font-size: 24px">
 						<li class="fragment">Excellent voice activity detection</li>
-						<li class="fragment">Overestimation between $2 < k < 6$</li> <li class="fragment">Error rarely larger
-								than $k=2$</li>
+						<li class="fragment">Overestimation between $2 < k < 6$</li> <li class="fragment">Error rarely larger than 2</li>
 						</k>
 					</ul>
 				</div>
@@ -534,22 +539,6 @@
 					<img width="100%" src="assets/images/responses.svg" alt="">
 				</div>
 		
-			</div>
-		</section>
-
-		<section>
-			<h2>Complexity</h2>
-			<div class="container">
-				<div class="col">
-					<ul style="font-size: 24px">
-						<li class="fragment">CRNN: Best Performance/Complexity</li>
-						<li class="fragment">F-CRNN: Suitable for mobile applications</li>
-						</k>
-					</ul>
-				</div>
-				<div class="col">
-					<img width="100%" src="assets/images/complexity.svg" alt="">
-				</div>
 			</div>
 		</section>
 
@@ -619,7 +608,7 @@
 					<div class="container" style="text-align: center">
 						<div class='col'>
 							<div class="fig-container" data-file="assets/figures/wow.html"
-								data-style="height: 480px; width: 450px"></div>
+								data-style="height: 400px; width: 450px"></div>
 				
 						</div>
 					</div>
@@ -711,7 +700,7 @@
 			<ul>
 				<li class="fragment">Focus on overlapping part instead of non-overlapping part</li>
 				<li class="fragment">Proposed methods for separating unison mixtures</li> 
-				<li class="fragment">Extended Common Fate for the Music scenario</li>
+				<li class="fragment">Extended Common Fate for music scenario</li>
 				<li class="fragment">Speaker count estimation using Deep Learning</li>
 				<li class="fragment">Listening tests showed performance better than human</li>
 				<li class="confirm fragment">Modulations play an important role audio tasks</li>
@@ -749,28 +738,27 @@
 		<h2>Further Contributions</h2>
 		<div class="container">
 			<div class="col" style="flex: 2">
-				<h3>Public Domain</h3>
+				<h3>Community service</h3>
 				<ul>
 					<li>Unison Dataset</li>
 					<li>Cello Dataset</li>
 					<li>DSD100, MUSDB18 Dataset</li>
 				</ul>
+				<h3>Evaluation campaigns</h3>
+				<ul>
+					<li>Submissions to SiSEC 2015, 2016</li>
+					<li>SiSEC Organization 2016, 2018</li>
+				</ul>
 				<h3>Reproducibility</h3>
 				<ul>
-					<li>commonfate</li>
-					<li>musdb</li>
-					<li>museval</li>
-				</ul>
-				<h3>Community</h3>
-				<ul>
-					<li>SiSEC Organization 2016, 2018</li>
-					<li><a href="http://sisec17.audiolabs-erlangen.de">Interactive Evaluation</a></li>
+					<li>Python: commonfate, musdb, museval</li>
+					<li>Web: SiSEC Websites, webMUSHRA</li>
 				</ul>
 	
 			</div>
 	
 			<div class="col">
-	
+				<img height="60%" src="assets/images/other_contribs.png" alt="">
 			</div>
 		</div>
 	</section>

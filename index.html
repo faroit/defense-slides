@@ -47,7 +47,7 @@
 	<section data-state="no-title-footer no-progressbar" data-background="black" data-state="no-title-footer" data-fullscreen>
 		<div class="container">
 			<div class="col fragment">
-				<h1 style="color:#ED8C01">How many speakers are in the room?</h1>
+				<h1 style="color:#ED8C01">How many speakers do you hear?</h1>
 				<div>
 					<span class="fragment" data-audio-src="assets/audio/two_speaker_faded.wav"><h3>Example A</h3></span>
 				</div>
@@ -265,7 +265,7 @@
 				<ul>
 					<li>Source/filter model</li>
 					<li>HR-NMF (high resolution NMF)</li>
-					<li>Ampltide modulation spectrogram factorization</li>
+					<li>Amplitude modulation spectrogram factorization</li>
 				</ul>
 			</div>
 		</div>
@@ -461,13 +461,20 @@
 		</ul>
 	</section>
 
-	<!-- <section>
+	<section>
 		<h2>Task definition</h2>
-		<img src="assets/images/task.svg" alt="">
-		<p class="fragment" style="font-size: 28px; width: 60%; margin: auto; background-color: orange; padding: 10px; color:white">
-			$k$ = Maximum number of concurrent speaker
-		</p>
-	</section> -->
+		<p></p>
+		<div style="margin-top: 100px; text-align: center">
+
+			<img src="assets/images/pipe.svg" width="60%" alt="">
+		</div>
+		<!-- <img src="assets/images/task.svg" alt=""> -->
+		<p style="margin-top:120px"></p>
+		<ul class="fragment">
+			<li>$k$ = Maximum number of concurrent speaker</li>
+			<li>Evaluation metric: mean absolute (count) error</li>
+		</ul>
+	</section>
 
 	<section>
 		<h2>Data-Driven Count Estimation</h2>
@@ -485,7 +492,6 @@
 					<li>$k=0$ from TUT Acoustic Scenes dataset</li>
 				</ul>
 			</li>
-			<li>Evaluation metric: mean absolute count error</li>
 		</ul>
 	</section>
 

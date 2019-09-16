@@ -30,6 +30,9 @@ No, but From Chollet
 
 ## Modulation
 
+! [] Elbow method, BIC, etc
+
+
 - why does FM cause AM?
 
 ## Count Estimation
@@ -79,3 +82,55 @@ Solution changes with time(e.g. tracking, noise cancellation, adaptive filtering
 Solution needs to be adapted to particular cases(e.g. biometrics, personalization
 
 * [ ] durchgehen: https://perso.telecom-paristech.fr/grichard/Enseignements/AIC/Bases-signal-pour-traitement-parole.pdf
+
+### COUNT Distributions
+
+you could go for non parametric (quantile regression) and aim for linimum confidence interval for instance
+
+### Vibrato NTF by Creager
+
+ok not activation then the vocabulary is=decision
+because we output posterior distribution
+1:36 PM
+and decide afterwards
+
+# Thesis Bib Notes
+
+## Introduction
+
+### [111] Haykin90
+
+* Cherry invented the cocktail party problem
+* Analysis and Synthesis are different problems to solve. A machine is rather concerned about synthesis
+* Selective Attention (ignore other sources) vs. Divided attention (Simulultanous listening)
+* Also: switched attention
+
+### [32] Bregman90
+
+Five principles of Auditory Scene Analysis
+
+1. Proximity
+2. Similarity
+3. Continuity
+4. Closure (completes fragmentures)
+5. Common Fate (groups together activities (onset, glides, vibrato)
+	AM and FM!
+
+### Haykin DNN
+
+* [ ] TODO: backpropagation p153
+
+### [169] Antoine13
+
+* [ ] TODO: explain Gaussian model and MWF
+* [ ] TODO: What is PSD?
+
+#### Problem with RNN 
+
+* RNN computations are sequential
+* 
+
+### Eric Scheirer 
+
+understanding without separation
+

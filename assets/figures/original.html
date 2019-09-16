@@ -23,7 +23,7 @@
 <canvas id="myChart" width="100%" height="80px"></canvas>
 <script>
     var ctx = document.getElementById('myChart');
-    Chart.defaults.global.defaultFontSize = 24;
+    Chart.defaults.global.defaultFontSize = 19;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -44,6 +44,10 @@
         options: {
             scales: {
                 yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'MAE'
+                    },  
                     ticks: {
                         beginAtZero: true
                     }

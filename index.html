@@ -13,8 +13,6 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/github.css">
 
-		<script src="https://unpkg.com/wavesurfer.js"></script>
-
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -30,7 +28,7 @@
 
 	<section class="cover" data-background="css/theme/alabs/alabs_header.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-position="0 0" data-state="no-title-footer no-progressbar">
 		<h2>Separation and Count Estimation for Audio Sources Overlapping in Time and Frequency</h2>
-		<h3>PhD. Defense</h3>
+		<h3>Ph.D. Presentation</h3>
 		<p>
 			Fabian-Robert Stöter<br />
 		</p>
@@ -547,7 +545,7 @@
 		</section>
 
 		<section>
-			<h2>Evaluation of CountNet</h2>
+			<h2>Comparison to Baselines</h2>
 
 			<div class="container">
 				<div class='col'>
@@ -559,11 +557,8 @@
 				</div>
 				<div class='col fragment step-fade-in-then-out'>
 				<ul style='font-size: 0.8em'>
-					<li>MEAN: $k=5$</li>
-					<li>M7: K-Means of ${MFCC}[7]$</li>
-					<li>SVC: SVM Classification ${MFCC}_{20}$</li>
-					<li>SVR: SVM Regression ${MFCC}_{20}$</li>
-					<li>RNN: DNN Recurrent LSTM on STFT</li>
+					<li>MFCC7: K-Means of ${MFCC}[7]$</li>
+					<li>SVM Classification ${MFCC}_{20}$</li>
 					<li>CRNN: DNN LSTM+CNN on STFT</li>
 				</ul>
 				</div>
@@ -607,12 +602,12 @@
 		</section>
 
 				<section>
-					<h2>Evaluation of CountNet</h2>
+					<h2>Generalization CountNet</h2>
 				
 					<div class="container" style="text-align: center">
 						<div class='col'>
 							<div class="fig-container" data-file="assets/figures/wow.html"
-								data-style="height: 400px; width: 450px"></div>
+								data-style="height: 500px; width: 550px"></div>
 				
 						</div>
 					</div>

@@ -27,16 +27,13 @@
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['MEAN', 'M7', 'SVC', 'SVR', 'RNN', 'CRNN'],
+            labels: ['MFCC7', 'SVM', 'CRNN'],
             datasets: [{
                 label: 'Mean Absolute Error',
-                data: [2.73, 2.41, 0.63, 0.56, 0.38, 0.27],
+                data: [2.41, 0.63, 0.27],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.6)',
                     'rgba(54, 162, 235, 0.6)',
                     'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)',
                     'rgba(255, 159, 64, 1.0)'
                 ],
             }]

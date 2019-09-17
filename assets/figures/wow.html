@@ -20,14 +20,14 @@
 </head>
 
 <body style="margin: 0; padding: 0;">
-<canvas id="myChart" width="100%" height="90px"></canvas>
+<canvas id="myChart" width="120px" height="110px"></canvas>
 <script>
     var ctx = document.getElementById('myChart');
     Chart.defaults.global.defaultFontSize = 24;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Baseline', 'TIMIT', 'THCHS10 🇨🇳', '+/- 6dB', 'Rev.', 'Rev. Trained'],
+            labels: ['Baseline', 'TIMIT 🇬🇧', 'THCHS10 🇨🇳', '+/- 6dB', 'Reverberation', 'Rev. Retrained'],
             datasets: [{
                 label: 'Mean Absolute Error',
                 data: [0.27, 0.31, 0.36, 0.43, 1.63,  0.48],

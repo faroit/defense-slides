@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Backup Deck</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -29,67 +29,7 @@
 	<div class="slides">
 
 	<section>
-		<h2>Extended Slides</h2>
-		<div class="container">
-			<div class="col">
-				Common Fate
-			</div>
-			<div class="col">
-				Source Counting
-			</div>
-			<div class="col">
-				Time Warping
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<h2>The big picture</h2>
-		
-		<div>$$\mathbf{x}=\sum_{j=1}^{k}\mathbf{s}_j$$</div>
-		<div class="container">
-			<div class="col" style='text-align: center'>
-				<h3>Signal Processing</h3>
-				<ul>
-					<li>Can we obtain $\mathbf{s}_j$ from $\mathbf{x}$?</li>
-					<li>Source Separation</li>
-				</ul>
-			</div>
-			<div class="col" style='text-align: center'>
-				<h3>Signal Analysis</h3>
-				<ul>
-					<li>Can we find $k$ from $\mathbf{x}$?</li>
-					<li>Count Estimation</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<h2>Outlook</h2>
-		<ul>
-			<li>Paradigm shift for AI
-				<ul>
-					<li>Domain knowledge will still be useful</li>
-					<li>but: many problems can be solved without</li>
-				</ul>
-			</li>
-			<p></p>
-			<li>Source Separation
-				<ul>
-					<li>Representations learning</li>
-					<li>Utilize long-term structure</li>
-					<li>Generative models</li>
-				</ul>
-			</li>
-			<li>Count estimation
-				<ul>
-					<li>Realistic Datasets</li>
-					<li>Solving Extrapolation</li>
-				</ul>
-			</li>
-			
-		</ul>
+		<img width="120%" src="assets/images/trends.svg" alt="">
 	</section>
 
 	<section>
@@ -112,37 +52,6 @@
 		</section>
 	</section>
 
-	<section>
-		<h2>Applications</h2>
-		<div class="container">
-			<div class="col">
-			<h3>Separation</h3>
-				<ul>
-					<li>Active Listening</li>
-					<li>Music Repurposing</li>
-					<li>Hearing Aids</li>
-					<li>Frontend for many other signal processing methods</li>
-				</ul>
-			</div>
-			<div class="col">
-				<h3>Count Estimation</h3>
-				<ul>
-					<li>First step to address the separation</li>
-					<li>Crowd Surveillance</li>
-					<li>Wildlife Monitoring</li>
-					<li>Frontend for Speech Recognition and Diarization</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<section data-background="#ED8C01" data-state="no-title-footer">
-		<h1 style='color:white; font-size: 2.4em'>Source Separation</h1>
-	</section>
-
-	<section>
-		<img width="120%" src="assets/images/trends.svg" alt="">
-	</section>
 	
 	<section>
 		<img width="120%" src="assets/images/duration.png" alt="">
@@ -170,74 +79,9 @@
 		</div>
 	</section>
 
-	<section data-transition="slide fade-out">
-		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet</h3>
-		<div style="text-align: center" >
-			<img width="80%" src="assets/images/trumpet.svg">
-		</div>
-	</section>
-
-	<section data-transition="fade-in fade-out">
-		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
-		<div style="text-align: center">
-			<img width="80%" src="assets/images/cello.svg">
-		</div>
-	</section>
-
-	<section data-transition="fade-in fade-out">
-		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
-		<div style="text-align: center">
-				<img width="80%" src="assets/images/cello_ani.svg">
-		</div>
-	</section>
-
-	<section data-transition="fade-in fade-out">
-		<h2>Scenario: Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
-		<div style="text-align: center">
-			<img width="80%" src="assets/images/cello.svg">
-		</div>
-	</section>
-
-	<section data-transition="fade-in side">
-		<h2>Instruments playing Unison</h2>
-		<h3><img width="32px" src="assets/images/trumpet_icon.png" alt=""> Trumpet + <img width="32px" src="assets/images/cello_icon.png" alt=""> Cello</h3>
-		<div style="text-align: center">
-				<img width="80%" src="assets/images/both.svg">
-		</div>
-	</section>
-	
-	<section>
-		<h2>Research Question</h2>
-		<ul>
-			<li>Unison has extreme overlap</li>
-			<li>Separation Sandbox</li>
-		</ul>
-	</br>
-	</br>
-		<p style="width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
-			Can we utilize modulations for separation of unison mixtures?
-		</p>
-			</br>
-			</br>
-
-		<h3>Contributions</h3>
-		<ul>
-			<li>Known/Informed Modulation</li>
-			<li>Unknown Modulation</li>
-		</ul>
-	</section>
-
-	<section>
-		<h2>Known Modulation</h2>
-	</section>
-
 	<section>
 		<h2>Speaking Rate</h2>
-		<img width="70%" src="assets/images/speaking_rate.svg" alt="">
+		<img width="25%" src="assets/images/speaking_rate.svg" alt="">
 	</section>
 
 	<section>
@@ -249,26 +93,6 @@
 		</ul>
 	</section>
 	<section>
-		<section>
-			<h2>Known Modulation</h2>
-			<h3>Existing Models</h3>
-	
-			<div class="container">
-				<div class="col">
-					<ul>
-						<li>Source/filter model <a class='ref' href="#">Durrieu 2010</a></li>
-						<li>HR-NMF <a class='ref' href="#">Badeau 2011</a></li>
-						<li>Modulation tensor <a class='ref' href="#">Barker 2013</a>
-						</li>
-					</ul>
-					<h3>Proposed Model</h3>
-
-				</div>
-				<div class="col">
-					<img style="float:right" width="100%" src="assets/images/ReviewPaper_ Figure2_new.svg" alt="">
-				</div>
-			</div>
-		</section>
 	
 		<section>
 			<h2>A brief history: model-driven methods</h2>
@@ -342,21 +166,6 @@
 		</section>
 	</section>
 <!-- ----------------------------------------------------------------------------------------- -->
-
-
-	<section data-background="assets/images/devons.png" data-state="no-title-footer">
-	
-	</section>
-
-
-	<!-- ----------------------------------------------------------------------------------------- -->
-	<section data-background="assets/images/flock.jpg" data-state="no-title-footer">
-		<p style="background-color:rgba(255, 255, 255, .5) ; padding: 10px; color:black; margin-top: 15em">
-			<strong>Common Fate Transform:</strong> groups common modulation textures to sound sources.
-		</p>
-
-	</section>
-
 	<section>
 		<h2>Step 1: Short-Time Fourier Transform</h2>
 		<!-- TODO PLAY -->
@@ -401,105 +210,27 @@
 		<img class="stretch" src="assets/images/gridplot.svg">
 	</section>
 
-	<section>
-		<h2>Compared to modulation spectrograms... </h2>
-		<ul>
-			<li>CFT is computed using complex STFT $X$
-				<ul>
-					<li>Easily invertible</li>
-					<li>Models phase dependencies between neighbouring STFT entries</li>
-				</ul>
-			</li>
-			<li>Patches span/merge several frequency bins</li>
-			<li>Results in <strong>modulation texture</strong></li>
-		</ul>
-	</section>
-
-	<section>
 		<section>
-			<h2>Demo: Sax + Flute</h2>
-			<iframe src="assets/audio/commonfate/66-73.html" class="stretch"></iframe>
+			<h2>Learned Factors</h2>
+			<table>
+				<tr>
+					<td>
+						<img src="assets/images/P.png" width="100%" alt="" />
+						<p style="text-align:center">
+							P
+						</p>
+					</td>
+					<td>
+						<img src="assets/images/At.png" width="100%" alt="" />
+						<p style="text-align:center">
+							A
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p>
+			</p>
 		</section>
-		<section>
-			<h2>Demo: Viola + Flute</h2>
-			<iframe src="assets/audio/commonfate/42-73.html" class="stretch"></iframe>
-		</section>
-	</section>
-
-	<section>
-		<h2>Extension for real world data</h2>
-		<h3>SiSEC 2017</h3>
-		<img src="assets/images/sisec17.svg" alt="">
-	</section>
-
-	<section>
-		<h2>Summary</h2>
-		<h3>Processing Methods for Separation</h3>
-		<ul>
-			<li>Unison Source Separation Scenario</li>
-			<li>Importance of Modulations
-				<ul>
-					<li>Informed by $F_0$ to apply time warping</li>
-					<li>Common Fate Representation for unknown modulations</li>
-					<li>Common Fate Model, a suitable Factorization Model</li>
-					<li>Deep Common Fate, supervised separation</li>
-				</ul>
-			</li>
-		</ul>
-	</section>
-
-	<section>
-		<h2>Further Contributions</h2>
-		<div class="container">
-			<div class="col" style="flex: 2">
-			<h3>Data</h3>
-			<ul>
-				<li>Unison Dataset <a href="https://doi.org/10.5281/zenodo.1467921"><img
-							src="https://zenodo.org/badge/DOI/10.5281/zenodo.1467921.svg" alt="DOI"></a>
-				</li>
-				<li>Cello Dataset <a href="https://doi.org/10.5281/zenodo.1560651"><img
-							src="https://zenodo.org/badge/DOI/10.5281/zenodo.1560651.svg" alt="DOI"></a></li>
-				<li>DSD100, MUSDB18 Dataset</li>
-			</ul>
-			<h3>Software Packages</h3>
-			<ul>
-				<li><a href="http://github.com/aliutkus/commonfate">commonfate</a></li>
-				<li>musdb</li>
-				<li>museval</li>
-			</ul>
-			<h3>Community</h3>
-			<ul>
-				<li>SiSEC Organization 2016, 2018</li>
-				<li><a href="http://sisec17.audiolabs-erlangen.de">Interactive Evaluation</a></li>
-			</ul>
-
-			</div>
-		
-			<div class="col">
-				
-			</div>
-		</div>
-	</section>
-	<section data-background="#ED8C01" data-state="no-title-footer">
-		<h1 style='color:white; padding-right: 0px; font-size: 2.4em'>Source Count Estimation</h1>
-	</section>
-
-	<section>
-			<div><h2>Open-Unmix</h2></div>
-			<h3>State-of-the-art Music Separation 2019</h3>
-	
-			<div class="fig-container" data-file="http://umx-sisec18.s3-website.eu-west-3.amazonaws.com/"
-				data-scroll="no" data-style="height: 430px; width: 800px;">
-			</div>
-		</section>
-
-	<section>
-		<h1>Separability</h1>
-		<div style=text-align:center>
-		<iframe width="850" height="600" seamless frameborder="0" scrolling="no"
-			src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTHKuFERJtSQw870QDSr2e339Qt1qQ_O_F5r_wjpnB2Vq9oIul9fIfIHI6XdzU0uo1CCAxvFZSX0PeJ/pubchart?oid=220738334&amp;format=image"></iframe>
-		</div>
-	</section>
 
 	<section>
 		<h2>NTF Comparison of number of components</h2>
@@ -534,25 +265,6 @@
 	</section>
 
 	<section>
-		<div class="container">
-		
-			<div class="col">
-		<div class="fig-container" data-file="https://umxhq-demo.s3.eu-west-3.amazonaws.com/index.html" data-scroll="no"
-			data-style="height: 40vh; width: 100%;">
-		</div>
-
-			</div>
-		
-			<div class="col">
-		<div class="fig-container" data-file="https://umxpro-demo.s3.eu-west-3.amazonaws.com/index.html" data-scroll="no"
-			data-style="height: 40vh; width: 100%;">
-		</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section>
 		<h2>Number of Components</h2>
 		<img src="assets/images/iterations.svg" width="100%" alt="" />
 	</section>
@@ -576,38 +288,6 @@
 			</p>
 		</section>
 		
-		<section>
-			<h2>Step s: Common Fate Transform (CFT)</h2>
-			<table>
-				<tr>
-					<td>
-						<img src="assets/images/gft.png" width="100%" alt="" />
-						<p style="text-align:center">
-							STFT Grid
-						</p>
-						<p style="text-align:center">
-							$\mathcal{G} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
-						</p>
-					</td>
-					<td>
-						<img src="assets/images/cft.png" width="100%" alt="" />
-						<p style="text-align:center">
-							CFT
-						</p>
-						<p style="text-align:center">
-							$\mathcal{V} \in \mathbb{C}^{32 \times 48 \times 11 \times 6}$
-						</p>
-					</td>
-				</tr>
-			</table>
-			<p>
-			</p>
-		</section>
-
-	<section>
-		<img width="120%" src="assets/images/duration.png" alt="">
-	</section>
-
 	<section>
 		<h2>Parameters</h2>
 		<ul>
@@ -698,6 +378,91 @@
 			</div>
 		</div>
 	</section>
+		<section>
+			<section>
+				<h2>From fully connected to the simple recurrent net</h2>
+				<img style="float:center" width="90%" src="assets/images/recurrent_layer_1.svg" alt="">
+			</section>
+			<section>
+				<h2>From fully connected to the simple recurrent net</h2>
+				<img style="float:center" width="90%" src="assets/images/recurrent_layer_2.svg" alt="">
+			</section>
+			<section>
+				<h2>From fully connected to the simple recurrent net</h2>
+				<img style="float:center" width="90%" src="assets/images/time_distributed_dense.svg" alt="">
+			</section>
+			<section>
+				<h2>From fully connected to the simple recurrent net</h2>
+				<img style="float:center" width="90%" src="assets/images/recurrent_layer_3.svg" alt="">
+			</section>
+		
+			<section>
+				<h2>The simple recurrent net</h2>
+				<img style="float:left" width="24%" src="assets/images/recurrent_layer_4.svg" alt="">
+				<ul>
+					<li>$y_{t}=f\left(linear\left\{ x_{t},y_{t-1}\right\} \right)$</li>
+					<li>Similar to a Markov model
+						<ul>
+							<li>Exponential decay of information</li>
+							<li>Vanishing or exploding gradient for training</li>
+						</ul>
+					</li>
+				</ul>
+				<p>
+					<ul>
+						<li>Limited for long-term dependencies</li>
+					</ul>
+					<h6 style="margin-top:30%; color:gray">
+						P. Huang, et al. "Deep learning for monaural speech separation". (2014) ICASSP.
+					</h6>
+			</section>
+		</section>
+		
+		<section>
+			<section>
+				<h2>The long short term memory (LSTM)</h2>
+				<img style="margin-top:2%; float:center" width="100%" src="assets/images/lstm_1.svg" alt="">
+			</section>
+			<section>
+				<h2>The long short term memory (LSTM)</h2>
+				<img style="margin-top:2%; float:center" width="100%" src="assets/images/lstm_2.svg" alt="">
+			</section>
+			<section>
+				<h2>The long short term memory (LSTM)</h2>
+				<img style="margin-top:2%; float:center" width="80%" src="assets/images/lstm_3.svg" alt="">
+			</section>
+		</section>
+		
+		<section>
+			<section>
+				<h2>The bi-LSTM</h2>
+				<img style="margin-top:2%; float:left" width="50%" src="assets/images/blstm_1.svg" alt="">
+				<ul>
+					<li>LSTM are causal systems</li>
+					<li>Predicts future from past</li>
+				</ul>
+			</section>
+			<section>
+				<h2>The bi-LSTM</h2>
+				<img style="margin-top:2%; float:left" width="50%" src="assets/images/blstm_2.svg" alt="">
+				<ul>
+					<li>We can use anti-causal LSTM</li>
+					<li>Different predictions!</li>
+				</ul>
+			</section>
+			<section>
+				<h2>The bi-LSTM</h2>
+				<img style="margin-top:2%; float:left" width="50%" src="assets/images/blstm_3.svg" alt="">
+				<ul>
+					<li>Independent forward and backward</li>
+					<li>Outputs can be concatenated</li>
+					<li class="fragment">Outputs can be summed<p>
+							<img style="margin-top:2%; float:center" width="100%" src="assets/images/combine_blstm.svg" alt="">
+					</li>
+				</ul>
+			</section>
+		
+		</section>
 	</div>
 	<div class='footer'>
 		<div id="copyright">Fabian-Robert Stöter</div>

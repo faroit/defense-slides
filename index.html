@@ -70,7 +70,7 @@
 		</div>
 		<aside class="notes">
 			Good afternoon, it is an honor to welcome you to my defense especially...
-			I would like to thank all members of the jury for coming today for my defense.
+			I would like to thank all members of the jury for coming today: The head of the jury, Professor Schober, My first examinier: Bernd, 2nd Gael Richard from ParisTech in France, and Michael Kohlhase from institute of Knowledge Representation/Processing.
 		</aside>
 	</section>
 
@@ -95,6 +95,9 @@
 					alt="">
 			</div>
 		</div>
+		<aside class="notes">
+			I would like to explain the problems I am dealing with in this thesis by asking you two questions.
+		</aside>
 	</section>
 
 	<section>
@@ -210,41 +213,39 @@
 	</section>
 
 	<section>
-			<h2>Known Modulation</h2>	
-			<div class="container fragment">
-				<div class="col">
-					<h3>$F_{0}$ informed separation</h3>
-					<ul>
-						<li>Spectral Comb Filter</li>
-						<li>Informed non-negative matrix factorization (NMF)</li>
-					</ul>
-				</div>
-				<div class="col" style="vertical-align: top">
-					<img width="100%" src="assets/images/ReviewPaper_ Figure2_new.svg" alt="">
-				</div>
+		<h2>Known Modulation</h2>	
+		<div class="container fragment">
+			<div class="col">
+				<h3>$F_{0}$ informed separation</h3>
+				<ul>
+					<li>Spectral Comb Filter</li>
+					<li>Informed non-negative matrix factorization (NMF)</li>
+				</ul>
 			</div>
-			<p></p>
-			<div class="container fragment">
-				<div class="col">
-					<h3>Contribution</h3>
-					<ul>
-						<li>Use Time Warping</li>
-						</li>
-						<li>Filter in time domain
-							<ul>
-								<li>less artifacts</li>
-								<li>required: accurate F0</li>
-							</ul>
-						</li>
-			
-					</ul>
-				</div>
-				<div class="col">
-					<img width="100%" src="assets/images/ReviewPaper_ Figure2_new2.svg" alt="">
-			
-				</div>
+			<div class="col" style="vertical-align: top">
+				<img width="100%" src="assets/images/ReviewPaper_ Figure2_new.svg" alt="">
 			</div>
-
+		</div>
+		<p></p>
+		<div class="container fragment">
+			<div class="col">
+				<h3>Contribution</h3>
+				<ul>
+					<li>Use Time Warping</li>
+					</li>
+					<li>Filter in time domain
+						<ul>
+							<li>less artifacts</li>
+							<li>required: accurate F0</li>
+						</ul>
+					</li>
+		
+				</ul>
+			</div>
+			<div class="col">
+				<img width="100%" src="assets/images/ReviewPaper_ Figure2_new2.svg" alt="">
+			</div>
+		</div>
 	</section>
 
 	<section>
@@ -256,14 +257,13 @@
 
 	<section>
 		<h2>Unknown Modulation</h2>
-		
 		<div class="container fragment">
 			<div>
 				<h3>Joint modulation estimation and separation</h3>
 				<ul>
 					<li>Source/filter model</li>
 					<li>HR-NMF (high resolution NMF)</li>
-					<li>Amplitude modulation spectrogram factorization</li>
+					<li>AM spectrogram factorization</li>
 				</ul>
 			</div>
 		</div>
@@ -282,14 +282,12 @@
 	<section data-transition="none" data-background="assets/images/flocks.png" data-state="no-title-footer">
 		<p style="background-color:rgba(255, 255, 255, .7) ; padding: 10px; color:black; margin-top: 15em">
 			<strong>Common Fate:</strong> groups based on their common motion over time.</p>
-	
 	</section>
 
 	<section data-transition="none" data-background-video="assets/video/flocks.mov" data-state="no-title-footer" data-background-video-muted>
 		<p style="background-color:rgba(255, 255, 255, .7) ; padding: 10px; color:black; margin-top: 15em">
 			<strong>Common Fate:</strong> groups based on their common motion over time.
 		</p>
-
 	</section>
 
 		<section>
@@ -308,7 +306,6 @@
 				<li>Separation using Non-Negative Tensor Factorization</li>
 			</ul>
 		</section>
-
 
 	<!-- <section>
 		<h2>In Detail</h2>
@@ -501,243 +498,171 @@
 		<img src="assets/images/params3.svg" class="fragment step-fade-in-then-out" width="100%" class="" alt="">
 	</section>
 
-		<!-- <section>
-			<h2>Model selection</h2>
-			<img src="assets/images/countnet_parameters.svg" alt="">
-		</section> -->
-
-			<section>
-				<h2>Complexity</h2>
-				<div class="container">
-					<div class="col">
-						<img width="100%" src="assets/images/complexity.svg" alt="">
-					</div>
-					<div class="col">
-						<ul style="font-size: 24px">
-							<li class="fragment">CRNN: Best tradeoff Performance/Complexity</li>
-							<li class="fragment">F-CRNN: Suitable for mobile applications</li>
-							</k>
-						</ul>
-					</div>
-				</div>
-						<p class="fragment"
-							style="font-size: 28px; width: 100%; margin: auto; background-color: orange; margin-top: 10px; padding: 10px; color:white">
-							<strong>CountNet</strong>: STFT → CRNN → Classification
-						</p>
-
-			</section>
-
-		<section>
-			<h2>Results on Test set</h2>
-			<div class="container">
-				<div class="col">
-					<ul style="font-size: 24px">
-						<li class="fragment">Excellent voice activity detection</li>
-						<li class="fragment">Overestimation between $2 < k < 6$</li> <li class="fragment">Error rarely larger than 2</li>
-						</k>
-					</ul>
-				</div>
-				<div class="col">
-					<img width="100%" src="assets/images/responses.svg" alt="">
-				</div>
-		
+	<section>
+		<h2>Complexity</h2>
+		<div class="container">
+			<div class="col">
+				<img width="100%" src="assets/images/complexity.svg" alt="">
 			</div>
-		</section>
+			<div class="col">
+				<ul style="font-size: 24px">
+					<li class="fragment">CRNN: Best tradeoff Performance/Complexity</li>
+					<li class="fragment">F-CRNN: Suitable for mobile applications</li>
+					</k>
+				</ul>
+			</div>
+		</div>
+		<p class="fragment"
+			style="font-size: 28px; width: 100%; margin: auto; background-color: orange; margin-top: 10px; padding: 10px; color:white">
+			<strong>CountNet</strong>: STFT → CRNN → Classification
+		</p>
+	</section>
 
-		<section>
-			<h2>Comparison to Baselines</h2>
+	<section>
+		<h2>Results on Test set</h2>
+		<div class="container">
+			<div class="col">
+				<ul style="font-size: 24px">
+					<li class="fragment">Excellent voice activity detection</li>
+					<li class="fragment">Overestimation between $2 < k < 6$</li> <li class="fragment">Error rarely larger than 2</li>
+					</k>
+				</ul>
+			</div>
+			<div class="col">
+				<img width="100%" src="assets/images/responses.svg" alt="">
+			</div>	
+		</div>
+	</section>
 
-			<div class="container">
-				<div class='col'>
-					<div class="fig-container" data-file="assets/figures/original.html" data-style="height: 400px; width: 450px"></div>
-					<h4>Train: LibriSpeech</br>
-						Test: LibriSpeech
-					</h4>
+	<section>
+		<h2>Comparison to Baselines</h2>
 
-				</div>
-				<div class='col fragment step-fade-in-then-out'>
+		<div class="container">
+			<div class='col'>
+				<div class="fig-container" data-file="assets/figures/original.html" data-style="height: 400px; width: 450px"></div>
+				<h4>Train: LibriSpeech</br>
+					Test: LibriSpeech
+				</h4>
+
+			</div>
+			<div class='col fragment step-fade-in-then-out'>
 				<ul style='font-size: 0.8em'>
-					<li>MFCC7: K-Means of ${MFCC}[7]$</li>
-					<li>SVM Classification ${MFCC}_{20}$</li>
+					<li>MFCC7: K-Means on ${MFCC}[7]$</li>
+					<li>SVM Classification on ${MFCC}_{20}$</li>
 					<li>CRNN: DNN LSTM+CNN on STFT</li>
 				</ul>
-				</div>
-
-				<!-- <div class='col fragment step-fade-in-then-out'>
-					<div class="fig-container" data-file="assets/figures/wow.html" data-style="height: 400px; width: 450px"></div>
-					<h4>Train: LibriSpeech</br>
-						Test: TIMIT
-					</h4>
-
-				</div>
-
-				<div class='col fragment step-fade-in-then-out'>
-					<div class="fig-container" data-file="assets/figures/chinese.html" data-style="height: 400px; width: 450px"></div>
-					<h4>Train: LibriSpeech</br>
-						Test: THCS10 🇨🇳
-					</h4>				
-				</div>
-
-				<div class='col fragment step-fade-in-then-out'>
-					<div class="fig-container" data-file="assets/figures/gains.html" data-style="height: 400px; width: 450px"></div>
-					<h4>Train: LibriSpeech</br>
-						Test: LibriSpeech +/- 6dB
-					</h4>
-				</div>
-
-				<div class='col fragment step-fade-in-then-out'>
-					<div class="fig-container" data-file="assets/figures/rev.html" data-style="height: 400px; width: 450px"></div>
-					<h4>Train: LibriSpeech</br>
-						Test: LibriSpeech Reverberated
-					</h4>
-				</div>
-
-				<div class='col fragment step-fade-in-then-out'>
-					<div class="fig-container" data-file="assets/figures/revrev.html" data-style="height: 400px; width: 450px"></div>
-					<h4>Train: LibriSpeech Reverberated</br>
-						Test: LibriSpeech Reverberated
-					</h4>
-				</div> -->
-			</div>				
-		</section>
-
-				<section>
-					<h2>Generalization CountNet</h2>
-				
-					<div class="container" style="text-align: center">
-						<div class='col'>
-							<div class="fig-container" data-file="assets/figures/wow.html"
-								data-style="height: 500px; width: 550px"></div>
-				
-						</div>
-					</div>
-				</section>
-		<section>
-			<h2>CountNet Demo</h2>
-			<video controls loop>
-				<source data-src="assets/video/countnet-demo.mp4" type="video/mp4" />
-			</video>
-		</section>
-
-		<section>
-			<h2>Research Questions</h2>
-			<ul>
-				<li style="opacity: 0.5">What are the limitations of subitizing audio sources?</li>
-				<li style="opacity: 0.5">Can we build a machine to address count estimation?</li>
-				<li class='confirm'>Would a machine be subject to the same limitations?</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2>CountNet vs. Human</h2>
-			<div class="container">
-				<div class="col">
-					<ul style="font-size: 36px">
-						<li class="man fragment">Underestimation</li>
-						<li class="machine fragment">Overestimation </li>
-						<li class="man fragment">One-Two-Three-Many</li>
-						<li class="machine fragment">One-...-$k_{max}$</li>
-					</ul>
-				</div>
-				<div class="col">
-					<img width="100%" src="assets/images/superhuman.svg" alt="">
-				</div>
 			</div>
-		</section>
 
-		<section data-background="assets/images/blackbox.jpg" data-state="no-title-footer">
-		
-		</section>
+		</div>
+	</section>
 
-		<section>
-			<h2>Understanding CountNet</h2>
-			<div style="text-align: center" class="container fragment step-fade-in-then-out">
-				<img width="80%" src="assets/images/input3.svg" alt="">
+	<section>
+		<h2>Generalization Performance CountNet</h2>
+		<div class="container" style="text-align: center">
+			<div class='col'>
+				<div class="fig-container" data-file="assets/figures/wow.html"
+					data-style="height: 500px; width: 550px"></div>
 			</div>
-			<div class="container fragment step-fade-in-then-out">
-				<h3 style="margin-top: -20px">Convolutional Filters</h3>
-				<img width="120%" src="assets/images/convfilters.svg" alt="">
-			<p
-				style="font-size: 24px; width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
-				Does CountNet recognize phonemes?
+		</div>
+	</section>
+
+	<section>
+		<h2>CountNet Demo</h2>
+		<video controls loop>
+			<source data-src="assets/video/countnet-demo.mp4" type="video/mp4" />
+		</video>
+	</section>
+
+	<section>
+		<h2>Research Questions</h2>
+		<ul>
+			<li style="opacity: 0.5">What are the limitations of subitizing audio sources?</li>
+			<li style="opacity: 0.5">Can we build a machine to address count estimation?</li>
+			<li class='confirm'>Would a machine be subject to the same limitations?</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>CountNet vs. Human</h2>
+		<div class="container">
+			<div class="col">
+				<ul style="font-size: 36px">
+					<li class="man fragment">Underestimation</li>
+					<li class="machine fragment">Overestimation </li>
+					<li class="man fragment">One-Two-Three-Many</li>
+					<li class="machine fragment">One-...-$k_{max}$</li>
+				</ul>
+			</div>
+			<div class="col">
+				<img width="100%" src="assets/images/superhuman.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section data-background="assets/images/blackbox.jpg" data-state="no-title-footer">
+	</section>
+
+	<section>
+		<h2>Understanding CountNet</h2>
+		<div style="text-align: center" class="container fragment step-fade-in-then-out">
+			<img width="80%" src="assets/images/input3.svg" alt="">
+		</div>
+		<div class="container fragment step-fade-in-then-out">
+			<h3 style="margin-top: -20px">Convolutional Filters</h3>
+			<img width="120%" src="assets/images/convfilters.svg" alt="">
+		<p
+			style="font-size: 24px; width: 50%; margin: auto; background-color: orange; padding: 10px; color:white">
+			Does CountNet recognize phonemes?
+		</p>
+
+		</div>
+
+	</section>
+
+	<section>
+		<h2>Understanding CountNet</h2>
+		<h3 style="margin-top: -20px">Ablation Study</h3>
+		<ul>
+			<li>Using phonetic annotation in TIMIT dataset</li>	
+			<li>Measure speaking rate</li>
+			<li>Syllables per second => Modulation of Speech</li>
+		</ul>
+		<img width="90%" src="assets/images/phonemes.svg" alt="">
+	</section>
+
+	<section>
+		<h2>Understanding CountNet</h2>
+
+		<div class="container">
+			<div class="col">
+				<ul>
+					<li>Retrained model on TIMIT</li>
+					<li>Select k=6 items (balanced)</li>
+					<li>Errors only <emph>underestimation</emph></li>
+					<li class="confirm">Speaking rate has significant influence on the error</li>
+				</ul>
+			<p class="fragment" style="font-size: 24px; width: 70%; margin: auto; background-color: orange; margin-top: 20px; padding: 10px; color:white">
+				CountNet used speech modulations
 			</p>
-
 			</div>
 
-		</section>
+			<div class="col" style="flex: 0.5">
+				<img width="70%" src="assets/images/speaking_rate.svg" alt="">
+			</div>			
+		</div>
+	</section>
 
-		<section>
-			<h2>Understanding CountNet</h2>
-			<h3 style="margin-top: -20px">Ablation Study</h3>
-			<ul>
-				<li>Using phonetic annotation in TIMIT dataset</li>	
-				<li>Measure speaking rate</li>
-				<li>Syllables per second => Modulation of Speech</li>
-			</ul>
-			<img width="90%" src="assets/images/phonemes.svg" alt="">
-		</section>
-
-		<section>
-			<h2>Understanding CountNet</h2>
-
-			<div class="container">
-				<div class="col">
-					<ul>
-						<li>Retrained model on TIMIT</li>
-						<li>Select k=6 items (balanced)</li>
-						<li>Errors only <emph>underestimation</emph></li>
-						<li class="confirm">Speaking rate has significant influence on the error</li>
-					</ul>
-				<p class="fragment" style="font-size: 24px; width: 70%; margin: auto; background-color: orange; margin-top: 20px; padding: 10px; color:white">
-					CountNet used speech modulations
-				</p>
-				</div>
-
-				<div class="col" style="flex: 0.5">
-					<img width="70%" src="assets/images/speaking_rate.svg" alt="">
-				</div>			
-			</div>
-		</section>
-
-		
-		<section>
-			<h2>Conclusion</h2>
-			<ul>
-				<li class="fragment">Focus on overlapping part instead of non-overlapping part</li>
-				<li class="fragment">Proposed methods for separating unison mixtures</li> 
-				<li class="fragment">Extended Common Fate for music scenario</li>
-				<li class="fragment">Speaker count estimation using Deep Learning</li>
-				<li class="fragment">Studies showed CountNet outperformed humans</li>
-				<li class="confirm fragment">Modulations play an important role audio tasks</li>
-			</ul>
-		</section>
-
-		<!-- <section>
-			<h2>Outlook</h2>
-			<ul>
-				<li>Paradigm shift for AI
-					<ul>
-						<li>Domain knowledge will still be useful</li>
-						<li>but: many problems can be solved without</li>
-					</ul>
-				</li>
-				<p></p>
-				<li>Source Separation
-					<ul>
-						<li>Representations learning</li>
-						<li>Utilize long-term structure</li>
-						<li>Generative models</li>
-					</ul>
-				</li>
-				<li>Count estimation
-					<ul>
-						<li>Realistic Datasets</li>
-						<li>Solving Extrapolation</li>
-					</ul>
-				</li>
-				
-			</ul>
-		</section> -->
+	<section>
+		<h2>Conclusion</h2>
+		<ul>
+			<li class="fragment">Focus on overlapping part instead of non-overlapping part</li>
+			<li class="fragment">Proposed methods for separating unison mixtures</li> 
+			<li class="fragment">Extended Common Fate for music scenario</li>
+			<li class="fragment">Speaker count estimation using Deep Learning</li>
+			<li class="fragment">Studies showed CountNet outperformed humans</li>
+			<li class="confirm fragment">Modulations play an important role audio tasks</li>
+		</ul>
+	</section>
 
 	<section>
 		<h2>Further Contributions</h2>
